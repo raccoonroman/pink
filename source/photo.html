@@ -1,10 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Пинк - фотографии</title>
 </head>
 <body>
-	
+<header class="page-header">
+	<nav class="main-nav">
+		<a class="main-nav__logo header-logo">
+			<img class="header-logo__img" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип Пинк">
+		</a>
+		<button class="main-nav__toggle" type="button">Открыть меню</button>
+	</nav>
+	<div class="main-nav__wrapper">
+		<ul class="main-nav__list nav-list">
+			<li class="nav-list__item">
+				<a href="index.html">Главная</a>
+			</li>
+			<li class="nav-list__item nav-list__item--active">
+				<a>Фотографии</a>
+			</li>
+			<li class="nav-list__item">
+				<a href="form.html">Конкурс</a>
+			</li>
+			<li class="nav-list__item">
+				<a href="https://htmlacademy.ru">HTML Academy</a>
+			</li>
+		</ul>
+	</div>
+</header>
+
+<main class="page-main">
+	<section class="photos">
+		<h1 class="page-main__title">Фотографии пользователей</h1>
+		<p class="page-main__desc">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+		<article class="photos__article article article--panorama">
+			<div class="article__photo">
+				<img class="article__img" src="img/panorama-mobile@1x.jpg" alt="" width="320" height="137">
+				<p class="article__photo-panorama">Панорама дня</p>
+			</div>
+			<div class="container">
+				<blockquote class="article__desc">
+					<cite class="article__author-name">Анна</cite>
+					<time class="article__time" datetime="2018-07-04">(5 минут назад)</time>
+					<p class="article__author-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+					<p class="article__like">Нравится: 215</p>
+				</blockquote>
+			</div>
+		</article>
+
+		<div class="container">
+			<article class="photos__article article">
+				<div class="article__photo">
+					<img class="article__img" src="img/photo-car-mobile@1x.jpg" alt="" width="280" height="180">
+				</div>
+				<blockquote class="article__desc">
+					<cite class="article__author-name">Левон</cite>
+					<time class="article__time" datetime="2018-07-04">(5 часов назад)</time>
+					<p class="article__author-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+					<p class="article__like">Нравится: 356</p>
+				</blockquote>
+			</article>
+
+			<article class="photos__article article">
+				<div class="article__photo">
+					<img class="article__img" src="img/photo-drumset-mobile@1x.jpg" alt="" width="280" height="180">
+				</div>
+				<blockquote class="article__desc">
+					<cite class="article__author-name">Антон</cite>
+					<time class="article__time" datetime="2018-07-04">(12 часов назад)</time>
+					<p class="article__author-text">Соседи будут рады!</p>
+					<p class="article__like">Нравится: 666</p>
+				</blockquote>
+			</article>
+
+			<article class="photos__article article">
+				<div class="article__photo">
+					<img class="article__img" src="img/photo-window-mobile@1x.jpg" alt="" width="280" height="180">
+				</div>
+				<blockquote class="article__desc">
+					<cite class="article__author-name">Борис</cite>
+					<time class="article__time" datetime="2018-07-03">(20 часов назад)</time>
+					<p class="article__author-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+					<p class="article__like">Нравится: 215</p>
+				</blockquote>
+			</article>
+
+			<article class="photos__article article">
+				<div class="article__photo">
+					<img class="article__img" src="img/photo-fair-mobile@1x.jpg" alt="" width="280" height="180">
+				</div>
+				<blockquote class="article__desc">
+					<cite class="article__author-name">Сергей</cite>
+					<time class="article__time" datetime="2018-07-03">(25 часов назад)</time>
+					<p class="article__author-text">Самая кубанская в мире!</p>
+					<p class="article__like">Нравится: 4</p>
+				</blockquote>
+			</article>
+
+			<article class="photos__article article">
+				<div class="article__photo">
+					<img class="article__img" src="img/photo-pov-mobile@1x.jpg" alt="" width="280" height="180">
+				</div>
+				<blockquote class="article__desc">
+					<cite class="article__author-name">Максим</cite>
+					<time class="article__time" datetime="2018-07-03">(40 часов назад)</time>
+					<p class="article__author-text">Где снег-то?</p>
+					<p class="article__like">Нравится: 150</p>
+				</blockquote>
+			</article>
+
+			<article class="photos__article article">
+				<div class="article__photo">
+					<img class="article__img" src="img/photo-wing-mobile@1x.jpg" alt="" width="280" height="180">
+				</div>
+				<blockquote class="article__desc">
+					<cite class="article__author-name">Надежда</cite>
+					<time class="article__time" datetime="2018-07-02">(45 часов назад)</time>
+					<p class="article__author-text">Всем GM и взаимные лайки!</p>
+					<p class="article__like">Нравится: 2560</p>
+				</blockquote>
+			</article>
+		</div>
+	</section>
+
+	<section class="upload">
+		<p class="upload__desc">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+		<form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
+			<div class="upload__photo">
+				<img src="img/photo-road-mobile@1x.jpg" alt="" width="280" height="374">
+			</div>
+			<ul class="upload__filter-list filter">
+				<li class="filter__item">
+					<img src="img/icon-editor-crop.svg" width="48" height="48" alt="Обрезать изображение">
+					<div class="range filter__range">
+						<div class="range__scale"></div>
+						<div class="range__toggle"></div>
+					</div>
+				</li>
+				<li class="filter__item">
+					<img src="img/icon-editor-fill.svg" width="48" height="48" alt="Заливка изображения">
+					<div class="range filter__range">
+						<div class="range__scale"></div>
+						<div class="range__toggle"></div>
+					</div>
+				</li>
+				<li class="filter__item">
+					<img src="img/icon-editor-contrast.svg" width="32" height="32" alt="Контраст изображения">
+					<div class="range filter__range">
+						<div class="range__scale"></div>
+						<div class="range__toggle"></div>
+					</div>
+				</li>
+			</ul>
+			<button class="btn upload__submit">Запостить</button>
+			<button class="btn upload__reset" type="reset">Отмена</button>
+		</form>
+	</section>
+</main>
+
+<footer class="page-footer">
+	<a class="page-footer__logo footer-logo">
+		<img class="footer-logo__img" src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="Логотип Пинк">
+	</a>
+	<ul class="social page-footer__social">
+		<li class="social__item">
+			<a class="social__link social__link--tw" href="#" aria-label="Твиттер">
+				<img src="img/icon-twitter.svg" width="18" height="15" alt="Твиттер">
+			</a>
+		</li>
+		<li class="social__item">
+			<a class="social__link social__link--fb" href="#" aria-label="Фейсбук">
+				<img src="img/icon-facebook.svg" width="9" height="19" alt="Фейсбук">
+			</a>
+		</li>
+		<li class="social__item">
+			<a class="social__link social__link--yt" href="#" aria-label="Ютуб">
+				<img src="img/icon-youtube.svg" width="15" height="14" alt="Ютуб">
+			</a>
+		</li>
+	</ul>
+	<div class="page-footer__copyright copyright">
+		<p class="copyright__text">Разработано:</p>
+		<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+			<img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+		</a>
+	</div>
+</footer>
 </body>
 </html>
