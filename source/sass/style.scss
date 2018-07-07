@@ -1,0 +1,57 @@
+@import "font-face.scss";
+@import "keyframes.scss";
+@import "blocks/page-header.scss";
+
+// переменные
+$opensans: "Open Sans", "Tahoma", sans-serif;
+$opensanslight: "Open Sans Light", "Tahoma", sans-serif;
+$opensansbold: "Open Sans Bold", "Tahoma", sans-serif;
+
+// миксины
+@mixin ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+// общие стили
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $opensans;
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #283645;
+	background-color: #fff;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
