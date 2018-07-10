@@ -12,23 +12,23 @@
 			<img class="header-logo__img" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип Пинк">
 		</a>
 		<button class="main-nav__toggle" type="button">Открыть меню</button>
+		<div class="main-nav__wrapper">
+			<ul class="main-nav__list nav-list">
+				<li class="nav-list__item nav-list__item--active">
+					<a>Главная</a>
+				</li>
+				<li class="nav-list__item">
+					<a href="photo.html">Фотографии</a>
+				</li>
+				<li class="nav-list__item">
+					<a href="form.html">Конкурс</a>
+				</li>
+				<li class="nav-list__item">
+					<a href="https://htmlacademy.ru">HTML Academy</a>
+				</li>
+			</ul>
+		</div>
 	</nav>
-	<div class="main-nav__wrapper">
-		<ul class="main-nav__list nav-list">
-			<li class="nav-list__item nav-list__item--active">
-				<a>Главная</a>
-			</li>
-			<li class="nav-list__item">
-				<a href="photo.html">Фотографии</a>
-			</li>
-			<li class="nav-list__item">
-				<a href="form.html">Конкурс</a>
-			</li>
-			<li class="nav-list__item">
-				<a href="https://htmlacademy.ru">HTML Academy</a>
-			</li>
-		</ul>
-	</div>
 </header>
 
 <main class="page-main">
@@ -63,34 +63,46 @@
 		<p class="advantages__slogan">Устали от серости мегаполиса?</p>
 		<p class="advantages__slogan">Нам есть, что вам  предложить!</p>
 		<ul class="advantages__list">
-			<li class="advantage__item advantage__item--mood">
-				<h3 class="advantage__title">Поднимает настроение</h3>
-				<p class="advantage__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+			<li class="advantages__item advantages__item--mood">
+				<h3 class="advantages__title">Поднимает настроение</h3>
+				<p class="advantages__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
 			</li>
-			<li class="advantage__item advantage__item--change">
-				<h3 class="advantage__title">Меняет мир вокруг</h3>
-				<p class="advantage__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+			<li class="advantages__item advantages__item--change">
+				<h3 class="advantages__title">Меняет мир вокруг</h3>
+				<p class="advantages__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
 			</li>
-			<li class="advantage__item advantage__item--friends">
-				<h3 class="advantage__title">Заводит новых друзей</h3>
-				<p class="advantage__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+			<li class="advantages__item advantages__item--friends">
+				<div class="advantages-img">
+					<img src="img/iphone-screen-mobile@1x.png" alt="Айфон с надписью 'Всем привет!'" width="157" height="320">
+				</div>
+				<h3 class="advantages__title">Заводит новых друзей</h3>
+				<p class="advantages__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
 			</li>
 		</ul>
 	</section>
 
 	<section class="reviews">
-		<div class="reviews__wrapper slider">
+		<div class="reviews__wrapper reviews-slider">
 			<h2 class="visually-hidden">Отзывы</h2>
-			<div class="reviews__list slider__list">
-				<blockquote class="reviews__item  slider__item">
+			<div class="reviews__list reviews-slider__list">
+				<blockquote class="reviews__item reviews-slider__item">
 					<cite class="reviews__author-name">Николай Петров</cite>
 					<p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
 				</blockquote>
-				<blockquote class="reviews__item  slider__item">
-					<cite class="reviews__author-name">Николай Петров</cite>
+				<blockquote class="reviews__item reviews-slider__item">
+					<cite class="reviews__author-name">Сергей Есенин</cite>
+					<p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+				</blockquote>
+				<blockquote class="reviews__item reviews-slider__item">
+					<cite class="reviews__author-name">Александр Птушкин</cite>
 					<p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
 				</blockquote>
 			</div>
+			<p class="price__toggles reviews-slider__toggles">
+				<button class="reviews-slider__toggle" type="button">1</button>
+				<button class="reviews-slider__toggle" type="button">2</button>
+				<button class="reviews-slider__toggle" type="button">3</button>
+			</p>
 		</div>
 	</section>
 
