@@ -16,6 +16,7 @@ $opensansbold: "Open Sans Bold", "Tahoma", sans-serif;
 @import "blocks/nav-list.scss";
 @import "blocks/download.scss";
 @import "blocks/download-desktop-link.scss";
+@import "blocks/advantages.scss";
 
 // общие стили
 body {
@@ -30,6 +31,11 @@ body {
 	color: #283645;
 	background-color: #fff;
 	width: 320px;
+}
+
+.container {
+	width: 100%;
+	padding: 0 20px;
 }
 
 *, *::before, *::after {
