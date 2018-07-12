@@ -1,0 +1,59 @@
+.advantages {
+	padding-top: 40px;
+}
+
+.advantages__slogan {
+	margin: 0;
+	margin-bottom: 26px;
+	font-family: $opensanslight;
+	font-size: 24px;
+}
+
+.advantages__container {
+	position: relative;
+	margin-top: 32px + 30px;
+	background-color: #f2f2f2;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: -32px;
+		left: 0;
+		right: 0;
+		border-bottom: 32px solid #f2f2f2;
+		border-left: 320px solid transparent;
+	}
+}
+
+.advantages__list {
+	@include ul;
+	padding-top: 50px;
+}
+
+.advantages__item {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 31px;
+}
+
+.advantages__img {
+	order: 1;
+	margin-top: 40px;
+	height: 278px;
+	overflow: hidden;
+}
+
+.advantages__title {
+	margin: 0;
+	margin-bottom: 12px;
+	font-family: $opensansbold;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000;
+}
+
+.advantages__desc {
+	margin: 0;
+	line-height: 24px;
+}
