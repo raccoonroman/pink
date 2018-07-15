@@ -1,0 +1,62 @@
+.slider__item {
+	display: block;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.slider__dots {
+	font-size: 0;
+}
+
+.dots-list {
+	@include ul;
+	display: flex;
+	justify-content: center;
+
+	li button {
+		position: relative;
+		display: block;
+		width: 25px;
+		height: 25px;
+		font-size: inherit;
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	li button::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 6px;
+		height: 6px;
+		background-color: rgba(#283645, .3);
+		border-radius: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	li button:hover:not(.slick-active button)::before,
+	li button:focus:not(.slick-active button)::before {
+		background-color: rgba(#283645, .6);
+	}
+
+	li button:active:not(.slick-active button)::before {
+		background-color: rgba(#283645, .1);
+	}
+
+	li.slick-active button {
+		&::before {
+			width: 12px;
+			height: 12px;
+			border: 3px solid #283645;
+			background-color: #fff;
+		}
+	}
+}
