@@ -87,92 +87,169 @@
 	<section class="reviews">
 		<h2 class="visually-hidden">Отзывы</h2>
 		<div class="container">
-			<div class="reviews__wrapper reviews-slider">
-				<div class="reviews__list reviews-slider__list">
-					<blockquote class="reviews__item reviews-slider__item">
+			<div class="reviews__wrapper slider">
+				<div class="reviews__list slider__list slider__list--reviews">
+					<blockquote class="reviews__item slider__item">
 						<cite class="reviews__author-name">Николай Петров</cite>
 						<p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
 					</blockquote>
-					<blockquote class="reviews__item reviews-slider__item">
+					<blockquote class="reviews__item slider__item">
 						<cite class="reviews__author-name">Сергей Есенин</cite>
-						<p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+						<p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!»</p>
 					</blockquote>
-					<blockquote class="reviews__item reviews-slider__item">
+					<blockquote class="reviews__item slider__item">
 						<cite class="reviews__author-name">Александр Птушкин</cite>
-						<p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+						<p class="reviews__text">«Это приложение перевернуло мой мир!»</p>
 					</blockquote>
 				</div>
-				<p class="price__toggles reviews-slider__toggles">
-					<button class="reviews-slider__toggle" type="button">1</button>
-					<button class="reviews-slider__toggle" type="button">2</button>
-					<button class="reviews-slider__toggle" type="button">3</button>
-				</p>
+				<div class="slider__dots slider__dots--reviews"></div>
 			</div>
 		</div>
 	</section>
 
 	<section class="price">
-		<div class="price__wrapper slider">
-			<h2 class="visually-hidden">Тарифы</h2>
-			<table class="price-list slider__list">
-				<tr>
-					<th class="price-list__caption price-list__caption--empty"></th>
-					<th class="price-list__caption">
-						<p class="price-list__tariff">База</p>
-						<p class="price-list__value">1,99 USD</p>
-					</th>
-					<th class="price-list__caption">
-						<p class="price-list__tariff">Стандарт</p>
-						<p class="price-list__value">3,99 USD</p>
-						<p class="price-list__hit">Хит</p>
-					</th>
-					<th class="price-list__caption">
-						<p class="price-list__tariff">Анлим</p>
-						<p class="price-list__value">9,99 USD</p>
-					</th>
-				</tr>
-				<tr>
-					<td class="price-list__field price-list__field--title">Розовый фильтр</td>
-					<td class="price-list__field price-list__field--check">Розовый фильтр
-						<img src="img/icon-yes.svg" width="31" height="22" alt="да">
-					</td>
-					<td class="price-list__field price-list__field--check">Розовый фильтр
-						<img src="img/icon-yes.svg" width="31" height="22" alt="да">
-					</td>
-					<td class="price-list__field price-list__field--check">Розовый фильтр
-						<img src="img/icon-yes.svg" width="31" height="22" alt="да">
-					</td>
-				</tr>
-				<tr>
-					<td class="price-list__field price-list__field--title">Смайлики</td>
-					<td class="price-list__field price-list__field--check">Смайлики
-						<img src="img/icon-no.svg" width="27" height="27" alt="нет">
-					</td>
-					<td class="price-list__field price-list__field--check">Смайлики
-						<img src="img/icon-yes.svg" width="31" height="22" alt="да">
-					</td>
-					<td class="price-list__field price-list__field--check">Смайлики
-						<img src="img/icon-yes.svg" width="31" height="22" alt="да">
-					</td>
-				</tr>
-				<tr>
-					<td class="price-list__field price-list__field--title">Комментарии</td>
-					<td class="price-list__field price-list__field--check">Комментарии
-						<img src="img/icon-no.svg" width="27" height="27" alt="нет">
-					</td>
-					<td class="price-list__field price-list__field--check">Комментарии
-						<img src="img/icon-no.svg" width="27" height="27" alt="нет">
-					</td>
-					<td class="price-list__field price-list__field--check">Комментарии
-						<img src="img/icon-yes.svg" width="31" height="22" alt="да">
-					</td>
-				</tr>
-			</table>
-			<p class="price__toggles slider__toggles">
-				<button class="slider__toggle" type="button">1</button>
-				<button class="slider__toggle" type="button">2</button>
-				<button class="slider__toggle" type="button">3</button>
-			</p>
+		<h2 class="visually-hidden">Тарифы</h2>
+		<table class="price__list">
+			<tr>
+				<th class="price__caption price__caption--empty"></th>
+				<th class="price__caption">
+					<p class="price__tariff">База</p>
+					<p class="price__value">1,99 USD</p>
+				</th>
+				<th class="price__caption">
+					<p class="price__tariff">Стандарт</p>
+					<p class="price__value">3,99 USD</p>
+					<p class="price__hit">Хит</p>
+				</th>
+				<th class="price__caption">
+					<p class="price__tariff">Анлим</p>
+					<p class="price__value">9,99 USD</p>
+				</th>
+			</tr>
+			<tr>
+				<td class="price__field price__field--title">Розовый фильтр</td>
+				<td class="price__field price__field--check">
+					<img src="img/icon-yes.svg" width="31" height="22" alt="да">
+				</td>
+				<td class="price__field price__field--check">
+					<img src="img/icon-yes.svg" width="31" height="22" alt="да">
+				</td>
+				<td class="price__field price__field--check">
+					<img src="img/icon-yes.svg" width="31" height="22" alt="да">
+				</td>
+			</tr>
+			<tr>
+				<td class="price__field price__field--title">Смайлики</td>
+				<td class="price__field price__field--check">
+					<img src="img/icon-no.svg" width="27" height="27" alt="нет">
+				</td>
+				<td class="price__field price__field--check">
+					<img src="img/icon-yes.svg" width="31" height="22" alt="да">
+				</td>
+				<td class="price__field price__field--check">
+					<img src="img/icon-yes.svg" width="31" height="22" alt="да">
+				</td>
+			</tr>
+			<tr>
+				<td class="price__field price__field--title">Комментарии</td>
+				<td class="price__field price__field--check">
+					<img src="img/icon-no.svg" width="27" height="27" alt="нет">
+				</td>
+				<td class="price__field price__field--check">
+					<img src="img/icon-no.svg" width="27" height="27" alt="нет">
+				</td>
+				<td class="price__field price__field--check">
+					<img src="img/icon-yes.svg" width="31" height="22" alt="да">
+				</td>
+			</tr>
+		</table>
+
+
+		<div class="slider">
+			<div class="slider__list slider__list--price">
+				<table class="price__list slider__item">
+					<tr>
+						<th class="price__caption">
+							<p class="price__tariff">База</p>
+							<p class="price__value">1,99 USD</p>
+						</th>
+					</tr>
+					<tr>
+						<td class="price__field">
+							<p>Розовый фильтр</p>
+							<img src="img/icon-yes.svg" width="31" height="22" alt="да">
+						</td>
+					</tr>
+					<tr>
+						<td class="price__field">
+							<p>Смайлики</p>
+							<img src="img/icon-no.svg" width="27" height="27" alt="нет">
+						</td>
+					</tr>
+					<tr>
+						<td class="price__field">
+							<p>Комментарии</p>
+							<img src="img/icon-no.svg" width="27" height="27" alt="нет">
+						</td>
+					</tr>
+				</table>
+
+				<table class="price__list slider__item">
+					<tr>
+						<th class="price__caption">
+							<p class="price__tariff">Стандарт</p>
+							<p class="price__value">3,99 USD</p>
+							<p class="price__hit">Хит</p>
+						</th>
+					</tr>
+					<tr>
+						<td class="price__field">
+							<p>Розовый фильтр</p>
+							<img src="img/icon-yes.svg" width="31" height="22" alt="да">
+						</td>
+					</tr>
+					<tr>
+						<td class="price__field">
+							<p>Смайлики</p>
+							<img src="img/icon-yes.svg" width="31" height="22" alt="да">
+						</td>
+					</tr>
+					<tr>
+						<td class="price__field">
+							<p>Комментарии</p>
+							<img src="img/icon-no.svg" width="27" height="27" alt="нет">
+						</td>
+					</tr>
+				</table>
+
+				<table class="price__list slider__item">
+					<tr>
+						<th class="price__caption">
+							<p class="price__tariff">Анлим</p>
+							<p class="price__value">9,99 USD</p>
+						</th>
+					</tr>
+					<tr>
+						<td class="price__field">
+							<p>Розовый фильтр</p>
+							<img src="img/icon-yes.svg" width="31" height="22" alt="да">
+						</td>
+					</tr>
+					<tr>
+						<td class="price__field">
+							<p>Смайлики</p>
+							<img src="img/icon-yes.svg" width="31" height="22" alt="да">
+						</td>
+					</tr>
+					<tr>
+						<td class="price__field">
+							<p>Комментарии</p>
+							<img src="img/icon-yes.svg" width="31" height="22" alt="да">
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="slider__dots slider__dots--price"></div>
 		</div>
 	</section>
 
@@ -219,5 +296,9 @@
 		</a>
 	</div>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
