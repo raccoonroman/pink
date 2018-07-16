@@ -1,0 +1,307 @@
+.story__wrapper-title {
+	min-height: 237px;
+	padding-top: 95px;
+	color: #fff;
+	background: #2a3a4a url(../img/bg-back-mobile@1x.jpg) center top no-repeat;
+}
+
+.story__title {
+	margin: 0;
+	font-family: $opensanslight;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.story__desc {
+	margin: 45px 0 34px;
+}
+
+.story__container:nth-of-type(even) {
+	background-color: #f2f2f2;
+}
+
+.story__field {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.story__legend {
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #d22856;
+}
+
+.story__list {
+	@include ul;
+}
+
+.story__field--name {
+	margin-bottom: 25px;
+
+	.story__item {
+		margin-bottom: 17px;
+	}
+
+	label {
+		display: block;
+		padding-left: 23px;
+		padding-bottom: 5px;
+		text-align: left;
+		text-transform: uppercase;
+		color: #d22856;
+		cursor: pointer;
+	}
+
+	input {
+		display: block;
+		width: 100%;
+		padding: 17px 21px 18px;
+		font-family: inherit;
+		font-size: 18px;
+		color: inherit;
+		border: 2px solid #e5e5e5;
+		border-radius: 3px;
+	}
+
+	input:hover {
+		border-color: #283645;
+	}
+
+	input:focus {
+		outline: none;
+		border-color: #d22856;
+	}
+
+	input::placeholder {
+		color: inherit;
+	}
+}
+
+.story__field--achievement {
+
+	.story__legend {
+		margin-bottom: 43px;
+		padding-top: 38px;
+	}
+
+	.story__item {
+		margin-bottom: 52px;
+	}
+
+	.story__item:last-child {
+		margin-bottom: 47px;
+	}
+
+	label {
+		position: relative;
+		display: block;
+		padding-left: 70px;
+		font-size: 18px;
+		text-align: left;
+		cursor: pointer;
+	}
+
+	input + label::before {
+		content: "";
+		position: absolute;
+		top: -4px;
+		left: 0;
+		width: 39px;
+		height: 39px;
+		background-color: #fff;
+		border: 2px solid #e5e5e5;
+		border-radius: 3px;
+	}
+
+	input:checked + label::after {
+		content: "";
+		position: absolute;
+		top: 7px;
+		left: 9px;
+		width: 22px;
+		height: 16px;
+		background: url(../img/icon-check.svg) no-repeat;
+	}
+
+	label:hover::before,
+	input:focus + label::before {
+		border-color: #d22856;
+	}
+
+	label:active::before {
+		border-color: #283645;
+	}
+}
+
+.story__field--contacts {
+	padding: 32px 0 25px;
+
+	.story__item {
+		margin-bottom: 17px;
+	}
+
+	label {
+		display: block;
+		margin-bottom: 5px;
+		padding-left: 23px;
+		text-align: left;
+		text-transform: uppercase;
+		color: #d22856;
+		cursor: pointer;
+	}
+
+	input {
+		display: block;
+		width: 100%;
+		padding: 17px 21px 18px;
+		font-family: inherit;
+		font-size: 18px;
+		color: inherit;
+		border: 2px solid #e5e5e5;
+		border-radius: 3px;
+	}
+
+	input:hover {
+		border-color: #283645;
+	}
+
+	input:focus {
+		outline: none;
+		border-color: #d22856;
+	}
+
+	input::placeholder {
+		color: inherit;
+	}
+}
+
+.story__field--OS {
+	padding-bottom: 2px;
+
+	.story__legend {
+		padding-top: 38px;
+		margin-bottom: 39px;
+	}
+
+	.story__item {
+		margin-bottom: 45px;
+	}
+
+	label {
+		position: relative;
+		display: block;
+		padding-left: 70px;
+		font-size: 18px;
+		text-align: left;
+		cursor: pointer;
+	}
+
+	input + label::before {
+		content: "";
+		position: absolute;
+		top: -4px;
+		left: 0;
+		width: 39px;
+		height: 39px;
+		background-color: #fff;
+		border: 2px solid #e5e5e5;
+		border-radius: 50%;
+	}
+
+	input:checked + label::after {
+		content: "";
+		position: absolute;
+		top: 8px;
+		left: 12px;
+		width: 15px;
+		height: 15px;
+		background-color: #d22856;
+		border-radius: 50%;
+	}
+
+	label:hover::before,
+	input:focus + label::before {
+		border-color: #d22856;
+	}
+
+	label:active::before {
+		border-color: #283645;
+	}
+}
+
+.story__field--emotions {
+
+	.story__legend {
+		padding-top: 38px;
+		margin-bottom: 16px;
+	}
+
+	textarea {
+		display: block;
+		min-width: 100%;
+		max-width: 280px;
+		min-height: 201px;
+		margin-bottom: 48px;
+		padding: 17px 19px;
+		font-family: inherit;
+		font-size: 18px;
+		color: inherit;
+		border: 2px solid #e5e5e5;
+		border-radius: 3px;
+	}
+
+	textarea:hover {
+		border-color: #283645;
+	}
+
+	textarea:focus {
+		outline: none;
+		border-color: #d22856;
+	}
+
+	textarea::placeholder {
+		color: inherit;
+	}
+}
+
+.story__btn {
+	display: inline-block;
+	margin-bottom: 35px;
+	width: 100%;
+	padding: 19px 0 20px;
+	vertical-align: top;
+	text-align: center;
+	font-family: $opensansbold;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #2aab6d;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		background-color: #1c9b5e;
+	}
+
+	&:active {
+		color: rgba(#fff, .3);
+	}
+	&:disabled {
+		background-color: #e5e5e5;
+		cursor: default;
+	}
+}
+
+.story__note {
+	font-size: inherit;
+	text-transform: uppercase;
+
+	sup {
+		vertical-align: top;
+		font-size: inherit;
+		color: #d22856;
+	}
+}
