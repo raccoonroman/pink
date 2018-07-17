@@ -1,0 +1,16 @@
+.footer-logo {
+	display: block;
+
+	&:hover .footer-logo__text,
+	&:focus .footer-logo__text {
+		fill: #d22856;
+	}
+
+	&:active .footer-logo__text {
+		fill: #283645;
+	}
+
+	&:active {
+		opacity: .3;
+	}
+}

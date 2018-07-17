@@ -1,0 +1,32 @@
+.social {
+	@include ul;
+	display: flex;
+	justify-content: center;
+}
+
+.social__item {
+	margin: 0 6px;
+}
+
+.social__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 51px;
+	height: 51px;
+	border: 3px solid rgba(#283645, .1);
+	border-radius: 50%;
+
+	&:hover,
+	&:focus {
+		border-color: #283645;
+	}
+
+	&:active {
+		border-color: rgba(#283645, .1);
+	}
+
+	&:active img {
+		opacity: .3;
+	}
+}
