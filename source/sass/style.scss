@@ -11,17 +11,25 @@ $opensansbold: "Open Sans Bold", "Tahoma", sans-serif;
 }
 
 @import "font-face.scss";
+@import "../slick/slick.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/nav-list.scss";
 @import "blocks/download.scss";
 @import "blocks/download-desktop-link.scss";
 @import "blocks/advantages.scss";
+@import "blocks/slider.scss";
 @import "blocks/reviews.scss";
-@import "blocks/reviews-slider.scss";
 @import "blocks/price.scss";
-@import "blocks/price-list.scss";
-@import "blocks/price-slider.scss";
+@import "blocks/feedback.scss";
+@import "blocks/story.scss";
+@import "blocks/social.scss";
+@import "blocks/footer-logo.scss";
+@import "blocks/copyright.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/photos.scss";
+@import "blocks/article.scss";
+@import "blocks/upload.scss";
 
 // общие стили
 body {
