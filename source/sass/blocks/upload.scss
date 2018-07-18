@@ -1,0 +1,170 @@
+.upload__desc {
+	margin: 43px 0 42px;
+}
+
+.upload__form {
+	padding-top: 20px;
+	background-color: #f2f2f2;
+}
+
+.upload__photo {
+	margin-bottom: 40px;
+
+	img {
+		display: block;
+	}
+}
+
+.upload__filter-list {
+	@include ul;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: 27px;
+}
+
+.upload__filter-btn {
+	padding: 0;
+	background-color: transparent;
+	border: none;
+
+	&:focus {
+		outline: none;
+	}
+
+	&:focus .upload__filter-img {
+		fill: rgba(#283645, .5);
+	}
+}
+
+.upload__filter-img {
+	fill: rgba(#283645, .3);
+	cursor: pointer;
+
+	&:hover {
+		fill: rgba(#283645, .5);
+	}
+}
+
+.upload__filter-btn--active {
+
+	.upload__filter-img {
+		fill: #d22856;
+	}
+}
+
+.upload__range-list {
+	@include ul;
+	margin-bottom: 34px;
+}
+
+.upload__range-item {
+	position: relative;
+	width: 240px;
+	margin: 0 auto 20px;
+}
+
+.upload__range-scale {
+	height: 2px;
+	background-color: #283645;
+}
+
+.upload__range-toggle {
+	position: absolute;
+	top: -6px;
+	left: 0;
+	width: 14px;
+	height: 14px;
+	border: 2px solid #d22856;
+	border-radius: 50%;
+	background-color: #fff;
+	cursor: pointer;
+	transition: background-color .2s;
+
+	&:hover,
+	&:focus {
+		background-color: #d22856;
+	}
+}
+
+.upload__range-item--crop {
+
+	.upload__range-toggle {
+		left: 10%;
+	}
+}
+
+.upload__range-item--fill {
+
+	.upload__range-toggle {
+		left: 50%;
+	}
+}
+
+.upload__range-item--contrast {
+
+	.upload__range-toggle {
+		left: 90%;
+	}
+}
+
+.upload__line {
+	width: 100%;
+	height: 1px;
+	background-color: rgba(#283645, .1);
+}
+
+.upload__buttons {
+	padding: 38px 0 29px;
+}
+
+.upload__btn {
+	display: inline-block;
+	margin-bottom: 12px;
+	width: 100%;
+	padding: 14px 0 17px;
+	vertical-align: top;
+	text-align: center;
+	font-family: $opensansbold;
+	font-size: 18px;
+	line-height: 18px;
+	border: 3px solid #d22856;
+	border-radius: 28px;
+	background-color: transparent;
+	cursor: pointer;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.upload__btn--submit {
+	color: #d22856;
+
+	&:hover,
+	&:focus {
+		color: #fff;
+		background-color: #d22856;
+	}
+
+	&:active {
+		color: rgba(#fff, .3);
+	}
+}
+
+.upload__btn--reset {
+	color: rgba(#283645, .1);
+	border-color: rgba(#283645, .1);
+
+	&:hover,
+	&:focus {
+		color: rgba(#283645, .3);
+		border-color: rgba(#283645, .3);
+	}
+
+	&:active {
+		color: rgba(#fff, .3);
+		border-color: transparent;
+		background-color: rgba(#283645, .3);
+	}
+}
