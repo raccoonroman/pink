@@ -1,5 +1,6 @@
 .footer-logo {
-	display: block;
+	display: inline-block;
+	vertical-align: top;
 
 	&:hover .footer-logo__text,
 	&:focus .footer-logo__text {
