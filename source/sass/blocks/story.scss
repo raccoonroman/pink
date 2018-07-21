@@ -266,33 +266,7 @@
 }
 
 .story__btn {
-	display: inline-block;
 	margin-bottom: 35px;
-	width: 100%;
-	padding: 19px 0 20px;
-	vertical-align: top;
-	text-align: center;
-	font-family: $opensansbold;
-	font-size: 18px;
-	text-transform: uppercase;
-	color: #fff;
-	background-color: #2aab6d;
-	border: none;
-	border-radius: 3px;
-	cursor: pointer;
-
-	&:hover,
-	&:focus {
-		background-color: #1c9b5e;
-	}
-
-	&:active {
-		color: rgba(#fff, .3);
-	}
-	&:disabled {
-		background-color: #e5e5e5;
-		cursor: default;
-	}
 }
 
 .story__note {
