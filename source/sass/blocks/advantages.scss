@@ -10,24 +10,13 @@
 }
 
 .advantages__container {
-	position: relative;
-	margin-top: 32px + 30px;
-	background-color: #f2f2f2;
-
-	&::before {
-		content: "";
-		position: absolute;
-		top: -32px;
-		left: 0;
-		right: 0;
-		border-bottom: 32px solid #f2f2f2;
-		border-left: 320px solid transparent;
-	}
+	margin-top: -30px;
+	background: #f2f2f2 url('../img/bg-triangle-white.svg') center top no-repeat;
 }
 
 .advantages__list {
 	@include ul;
-	padding-top: 50px;
+	padding-top: 116px;
 }
 
 .advantages__item {
@@ -57,3 +46,10 @@
 	margin: 0;
 	line-height: 24px;
 }
+
+
+// @media (min-width: 768px) {
+// 	.advantages__slogan {
+// 		font-size: 40px;
+// 	}
+// }

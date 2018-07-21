@@ -12,6 +12,7 @@ $opensansbold: "Open Sans Bold", "Tahoma", sans-serif;
 
 @import "font-face.scss";
 @import "../slick/slick.scss";
+@import "blocks/button.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/nav-list.scss";
@@ -30,6 +31,8 @@ $opensansbold: "Open Sans Bold", "Tahoma", sans-serif;
 @import "blocks/photos.scss";
 @import "blocks/article.scss";
 @import "blocks/upload.scss";
+@import "blocks/success.scss";
+@import "blocks/fail.scss";
 
 // общие стили
 body {
@@ -43,12 +46,18 @@ body {
 	text-align: center;
 	color: #283645;
 	background-color: #fff;
-	width: 320px;
+	min-width: 320px;
+	max-width: 320px;
 }
 
 .container {
 	width: 100%;
 	padding: 0 20px;
+}
+
+.wrapper {
+	width: 280px;
+	margin: 0 auto;
 }
 
 *, *::before, *::after {
