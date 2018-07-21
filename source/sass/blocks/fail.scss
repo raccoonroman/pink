@@ -1,0 +1,24 @@
+.fail {
+	background-color: #fff;
+	box-shadow: 0 7px 15px rgba(0, 1, 1, .15);
+}
+
+.fail__title {
+	margin: 0;
+	margin-bottom: 26px;
+	padding-top: 38px;
+	font-family: $opensansbold;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000;
+}
+
+.fail__desc {
+	margin: 0;
+	margin-bottom: 40px;
+	line-height: 24px;
+}
+
+.fail__btn {
+	margin-bottom: 50px;
+}
