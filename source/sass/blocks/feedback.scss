@@ -9,6 +9,10 @@
 	font-size: 24px;
 }
 
+.feedback__column {
+	margin-bottom: 38px;
+}
+
 .feedback__text {
 	margin: 0;
 	font-family: $opensansbold;
@@ -26,17 +30,24 @@
 
 .feedback__map {
 	position: relative;
+	width: 100%;
 	height: 200px;
 	overflow: hidden;
-}
 
-.feedback__map-wrapper {
-	position: absolute;
-	top: -10px;
-	left: 0;
-	right: 0;
-	height: 100%;
-	background: transparent url('../img/bg-triangle-white-footer.svg') center top no-repeat;
+	&::before {
+		display: block;
+		content: "";
+		position: absolute;
+		z-index: 10;
+		width: 100%;
+		border-right: 50vw solid transparent;
+		border-top: 32px solid #fff;
+		border-left: 50vw solid transparent;
+	}
+
+	img[width="660"] {
+		display: none;
+	}
 }
 
 .feedback__tel {
@@ -47,3 +58,42 @@
 	margin-bottom: 25px;
 }
 
+@media (min-width: 660px) {
+	.feedback {
+		padding-top: 46px;
+	}
+
+	.feedback__title {
+		margin-bottom: 42px;
+		font-size: 40px;
+		line-height: 48px;
+	}
+
+	.feedback__column {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin-bottom: 9px;
+	}
+
+	.feedback__text {
+		margin-bottom: 4px;
+	}
+
+	.feedback__map {
+		height: 373px;
+
+		&::before {
+			border-top: 68px solid #fff;
+		}
+
+		img[width="320"] {
+			display: none;
+		}
+
+		img[width="660"] {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}

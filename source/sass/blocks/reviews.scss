@@ -15,7 +15,37 @@
 	color: #000;
 }
 
+.reviews__author-info {
+	display: none;
+}
+
 .reviews__text {
 	margin: 0;
 	margin-bottom: 26px;
+}
+
+@media (min-width: 660px) {
+
+	.reviews__list .reviews__item {
+		//чтобы перекрыть .slick-initialized .slick-slide
+		display: flex;
+		flex-direction: column;
+	}
+
+	.reviews__author-name {
+		margin-bottom: 2px;
+		font-size: 20px;
+	}
+
+	.reviews__author-info {
+		display: block;
+		margin: 0;
+		margin-bottom: 27px;
+	}
+
+	.reviews__text {
+		order: -1;
+		margin-bottom: 35px;
+		font-size: 18px;
+	}
 }

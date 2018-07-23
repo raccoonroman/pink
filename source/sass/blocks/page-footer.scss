@@ -21,3 +21,30 @@
 .page-footer__copyright {
 	margin-bottom: 30px;
 }
+
+@media (min-width: 660px) {
+	.page-footer--index {
+		display: block;
+	}
+
+	.page-footer__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 127px;
+	}
+
+	.page-footer__logo {
+		margin-bottom: 5px;
+	}
+
+	.page-footer__social {
+		margin-top: 1px;
+		margin-bottom: 0;
+	}
+
+	.page-footer__copyright {
+		margin-top: 17px;
+		margin-bottom: 0;
+	}
+}

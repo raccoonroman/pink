@@ -12,7 +12,7 @@
 
 .price__caption {
 	position: relative;
-	width: 768px;
+	width: 660px;
 	padding: 16px 0 20px;
 	color: #fff;
 	background-color: #283645;
@@ -47,7 +47,7 @@
 	transform: rotate(-45deg);
 }
 
-.price__field {
+.price__row {
 	display: flex;
 	justify-content: space-between;
 	padding: 15px 18px 14px 21px;
@@ -61,3 +61,70 @@
 	}
 }
 
+@media (min-width: 660px) {
+	.price {
+		margin-top: -6px;
+		padding:  109px 0 34px;
+	}
+
+	.price__slider {
+		display: none;
+	}
+
+	.price__list {
+		display: table;
+		width: 100%;
+		margin-bottom: 33px;
+		border-radius: 3px;
+	}
+
+	.price__caption {
+		position: relative;
+		width: 25%;
+		padding: 15px 0 9px;
+		border-left: none;
+		border-right: 2px solid #e5e5e5;
+		outline: 1.5px solid #e5e5e5;//--
+		// чтобы было выдно боковые границы между заголовочными ячейками
+		border-bottom: 2px solid #283645;
+		overflow: hidden;
+
+		&:last-child {
+			border-right-color: #283645;
+		}
+	}
+
+	.price__caption--empty {
+		border: none;
+		background-color: transparent;
+		outline: none;
+	}
+
+	.price__tariff {
+		margin-bottom: 0;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.price__value {
+		font-size: 18px;
+	}
+
+	.price__hit {
+		top: 5px;
+		left: -32px;
+		line-height: 28px;
+	}
+
+	.price__field {
+		height: 47px;
+		padding: 10px 10px 6px 15px;
+		line-height: 14px;
+		border: 2px solid #e5e5e5;
+		background-color: #fff;
+	}
+
+	.price__field--title {
+		text-align: left;
+	}
+}

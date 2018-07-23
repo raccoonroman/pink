@@ -5,7 +5,7 @@
 @media (min-width: 660px) {
 	.effect {
 		display: block;
-		margin-bottom: 78px;
+		margin-bottom: 87px;
 		padding-top: 59px;
 	}
 
@@ -43,10 +43,12 @@
 		position: relative;
 		margin-right: 71px;
 		flex-shrink: 0;
+		width: 238px;
+		height: 276px;
 
 		p {
 			position: absolute;
-			top: 53%;
+			top: 55%;
 			left: 50%;
 			margin: 0;
 			font-family: $opensansbold;
@@ -54,6 +56,17 @@
 			line-height: 150px;
 			color: #d22856;
 			transform: translate(-50%, -50%);
+		}
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		img[width="202"] {
+			top: 55px;
+			left: 18px;
 		}
 	}
 }

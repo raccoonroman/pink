@@ -33,6 +33,7 @@ $opensansbold: "Open Sans Bold", "Tahoma", sans-serif;
 @import "blocks/upload.scss";
 @import "blocks/success.scss";
 @import "blocks/fail.scss";
+@import "blocks/effect.scss";
 
 // общие стили
 body {
@@ -47,7 +48,7 @@ body {
 	color: #283645;
 	background-color: #fff;
 	min-width: 320px;
-	max-width: 320px;
+	max-width: 660px;
 }
 
 .container {

@@ -14,6 +14,10 @@
 	background: #f2f2f2 url('../img/bg-triangle-white.svg') center top no-repeat;
 }
 
+.advantages__hello {
+	display: none;
+}
+
 .advantages__list {
 	@include ul;
 	padding-top: 116px;
@@ -48,8 +52,47 @@
 }
 
 
-// @media (min-width: 768px) {
-// 	.advantages__slogan {
-// 		font-size: 40px;
-// 	}
-// }
+@media (min-width: 660px) {
+
+	.advantages {
+		padding-top: 49px;
+	}
+
+	.advantages__slogan {
+		margin-bottom: 0;
+		font-size: 40px;
+		line-height: 48px;
+	}
+
+	.advantages__container {
+		display: flex;
+		margin-top: 26px;
+	}
+
+	.advantages__hello {
+		display: block;
+		flex-shrink: 0;
+		margin-right: 42px;
+		padding-top: 25px;
+		height: 506px;
+		overflow: hidden;
+
+		img {
+			display: block;
+		}
+	}
+
+	.advantages__list {
+		width: 100%;
+		text-align: left;
+		padding-top: 95px;
+	}
+
+	.advantages__item {
+		margin-bottom: 34px;
+	}
+
+	.advantages__img {
+		display: none;
+	}
+}
