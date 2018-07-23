@@ -29,11 +29,20 @@
 	margin-bottom: 31px;
 }
 
-.advantages__img {
+.advantages__image {
+	display: none;
+}
+
+.advantages__image--friends {
+	display: block;
 	order: 1;
 	margin-top: 40px;
 	height: 278px;
 	overflow: hidden;
+}
+
+.advantages__desktop-img {
+	display: none;
 }
 
 .advantages__title {
@@ -53,7 +62,6 @@
 
 
 @media (min-width: 660px) {
-
 	.advantages {
 		padding-top: 49px;
 	}
@@ -92,7 +100,86 @@
 		margin-bottom: 34px;
 	}
 
-	.advantages__img {
+	.advantages__image {
 		display: none;
+	}
+}
+
+@media (min-width: 960px) {
+	.advantages {
+		padding-top: 66px;
+	}
+	.advantages__slogan {
+		font-size: 50px;
+		line-height: 60px;
+	}
+
+	.advantages__container {
+		margin-top: 76px;
+	}
+
+	.advantages__container.container {
+		padding: 0 10px;
+	}
+
+	.advantages__hello {
+		display: none;
+	}
+
+	.advantages__list {
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+		padding-top: 0;
+	}
+
+	.advantages__item {
+		width: 294px;
+	}
+
+	.advantages__image {
+		display: block;
+		order: 0;
+		width: 100%;
+		height: 300px;
+		margin: 0 auto 57px;
+		overflow: hidden;
+
+		// &::after {
+		// 	content: "";
+		// 	position: absolute;
+		// 	bottom: 0;
+		// 	left: 0;
+		// 	right: 0;
+		// 	width: 300px;
+		// 	height: 17px;
+		// 	background: url(../img/iphone-shadow.png) center no-repeat;
+		// 	background-size: cover;
+		// 	z-index: 10;
+		// }
+	}
+
+	.advantages__desktop-img {
+		display: block;
+	}
+
+	.advantages__mobile-img {
+		display: none;
+	}
+
+	.advantages__text-wrapper {
+		margin: 0 auto;
+		width: 240px;
+	}
+
+	.advantages__title {
+		margin-bottom: 24px;
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	.advantages__desc {
+		font-size: 18px;
+		line-height: 30px;
 	}
 }
