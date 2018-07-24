@@ -15,3 +15,17 @@
 		opacity: .3;
 	}
 }
+
+.footer-logo__img--desktop {
+	display: none;
+}
+
+@media (min-width: 960px) {
+	.footer-logo__img--tablet {
+		display: none;
+	}
+
+	.footer-logo__img--desktop {
+		display: block;
+	}
+}

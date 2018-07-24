@@ -48,6 +48,10 @@
 	img[width="660"] {
 		display: none;
 	}
+
+	img[width="2560"] {
+		display: none;
+	}
 }
 
 .feedback__tel {
@@ -92,6 +96,51 @@
 		}
 
 		img[width="660"] {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
+
+@media (min-width: 960px) {
+	.feedback {
+		padding-top: 64px;
+	}
+
+	.feedback__container.container {
+		padding: 0 10px;
+	}
+
+	.feedback__title {
+		margin-bottom: 55px;
+		font-size: 50px;
+		line-height: 60px;
+	}
+
+	.feedback__column {
+		margin-bottom: 0;
+	}
+
+	.feedback__email {
+		order: 1;
+	}
+
+	.feedback__text {
+		margin-bottom: 22px;
+	}
+
+	.feedback__map {
+		height: 502px;
+
+		&::before {
+			border-top: 104px solid #fff;
+		}
+
+		img[width="660"] {
+			display: none;
+		}
+
+		img[width="2560"] {
 			display: block;
 			margin: 0 auto;
 		}

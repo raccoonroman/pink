@@ -75,7 +75,7 @@
 		display: table;
 		width: 100%;
 		margin-bottom: 33px;
-		border-radius: 3px;
+		border-radius: 5px;
 	}
 
 	.price__caption {
@@ -126,5 +126,45 @@
 
 	.price__field--title {
 		text-align: left;
+	}
+}
+
+@media (min-width: 960px) {
+	.price {
+		margin-top: 6px;
+		padding:  156px 0 63px;
+	}
+
+	.price__container.container {
+		padding: 0 10px;
+	}
+
+	.price__caption {
+		padding: 20px 0 20px;
+	}
+
+	.price__tariff {
+		margin-bottom: 4px;
+		font-size: 18px;
+	}
+
+	.price__value {
+		font-size: 24px;
+	}
+
+	.price__hit {
+		top: 12px;
+		left: -26px;
+		line-height: 30px;
+	}
+
+	.price__field {
+		height: 60px;
+		padding: 10px 20px 6px 20px;
+		line-height: 18px;
+	}
+
+	.price__field--title {
+		font-size: 18px;
 	}
 }

@@ -48,3 +48,13 @@
 		margin-bottom: 0;
 	}
 }
+
+@media (min-width: 960px) {
+	.page-footer__container.container {
+		padding: 0 10px;
+	}
+
+	.page-footer__container {
+		height: 197px;
+	}
+}

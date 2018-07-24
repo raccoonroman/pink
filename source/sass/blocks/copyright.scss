@@ -19,3 +19,10 @@
 		opacity: .3;
 	}
 }
+
+@media (min-width: 960px) {
+	.copyright__text {
+		font-size: 18px;
+		line-height: 26px;
+	}
+}
