@@ -3,7 +3,17 @@ $('.slider__list--reviews').slick({
 	arrows: false,
 	adaptiveHeight: true,
 	appendDots: ".slider__dots--reviews",
-	dotsClass: "dots-list"
+	dotsClass: "dots-list",
+	mobileFirst: true,
+	responsive: [
+		{
+			breakpoint: 959,
+			settings: {
+				dots: false,
+				arrows: true
+			}
+		}
+	]
 });
 
 $('.slider__list--price').slick({

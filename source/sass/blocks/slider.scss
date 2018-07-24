@@ -60,3 +60,28 @@
 		}
 	}
 }
+
+.slick-arrow {
+	position: absolute;
+	top: 4%;
+	width: 44px;
+	height: 82px;
+	font-size: 0;
+	border: none;
+	cursor: pointer;
+	z-index: 1;
+
+	&:focus {
+		outline-color: #d22856;
+	}
+}
+
+.slick-prev {
+	left: -22px;
+	background: transparent url('../img/arrow-left.svg') center no-repeat;
+}
+
+.slick-next {
+	right: -22px;
+	background: transparent url('../img/arrow-right.svg') center no-repeat;
+}
