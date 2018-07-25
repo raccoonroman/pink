@@ -64,6 +64,11 @@
 		}
 	}
 
+	.reviews__container.container {
+		max-width: 960px;
+		margin: 0 auto;
+	}
+
 	.reviews__author-name {
 		font-size: 24px;
 	}

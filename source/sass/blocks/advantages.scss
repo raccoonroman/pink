@@ -9,7 +9,7 @@
 	font-size: 24px;
 }
 
-.advantages__container {
+.advantages__bg {
 	margin-top: -30px;
 	background: #f2f2f2 url('../img/bg-triangle-white.svg') center top no-repeat;
 }
@@ -72,9 +72,12 @@
 		line-height: 48px;
 	}
 
+	.advantages__bg {
+		margin-top: 26px;
+	}
+
 	.advantages__container {
 		display: flex;
-		margin-top: 26px;
 	}
 
 	.advantages__hello {
@@ -114,11 +117,13 @@
 		line-height: 60px;
 	}
 
-	.advantages__container {
+	.advantages__bg {
 		margin-top: 76px;
 	}
 
 	.advantages__container.container {
+		max-width: 960px;
+		margin: 0 auto;
 		padding: 0 10px;
 	}
 

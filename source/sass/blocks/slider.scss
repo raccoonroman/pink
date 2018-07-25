@@ -70,18 +70,28 @@
 	border: none;
 	cursor: pointer;
 	z-index: 1;
+	opacity: .3;
+
+	&:hover,
+	&:focus {
+		opacity: .6;
+	}
 
 	&:focus {
-		outline-color: #d22856;
+		outline: none;
+	}
+
+	&:active {
+		opacity: .1;
 	}
 }
 
 .slick-prev {
-	left: -22px;
+	left: -20px;
 	background: transparent url('../img/arrow-left.svg') center no-repeat;
 }
 
 .slick-next {
-	right: -22px;
+	right: -20px;
 	background: transparent url('../img/arrow-right.svg') center no-repeat;
 }
