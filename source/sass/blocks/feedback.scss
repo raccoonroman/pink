@@ -38,6 +38,8 @@
 		display: block;
 		content: "";
 		position: absolute;
+		top: 0;
+		right: 0;
 		z-index: 10;
 		width: 100%;
 		border-right: 50vw solid transparent;
@@ -78,6 +80,13 @@
 		flex-wrap: wrap;
 		justify-content: space-around;
 		margin-bottom: 9px;
+	}
+
+	.feedback__tel,
+	.feedback__email,
+	.feedback__address {
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 
 	.feedback__text {

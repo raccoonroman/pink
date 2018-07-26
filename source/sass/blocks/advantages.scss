@@ -10,8 +10,21 @@
 }
 
 .advantages__bg {
-	margin-top: -30px;
-	background: #f2f2f2 url('../img/bg-triangle-white.svg') center top no-repeat;
+	position: relative;
+	margin-top: 30px;
+	background-color: #f2f2f2;
+
+	&::before {
+		display: block;
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 10;
+		width: 100%;
+		border-right: 100vw solid transparent;
+		border-top: 32px solid #fff;
+	}
 }
 
 .advantages__hello {
@@ -20,13 +33,12 @@
 
 .advantages__list {
 	@include ul;
-	padding-top: 116px;
+	padding-top: 82px;
 }
 
 .advantages__item {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 31px;
 }
 
 .advantages__image {
@@ -36,13 +48,17 @@
 .advantages__image--friends {
 	display: block;
 	order: 1;
-	margin-top: 40px;
+	margin-top: 9px;
 	height: 278px;
 	overflow: hidden;
 }
 
 .advantages__desktop-img {
 	display: none;
+}
+
+.advantages__text-wrapper {
+	margin-bottom: 31px;
 }
 
 .advantages__title {
@@ -73,7 +89,11 @@
 	}
 
 	.advantages__bg {
-		margin-top: 26px;
+		margin-top: 46px;
+
+		&::before {
+			border-top: 52px solid #fff;
+		}
 	}
 
 	.advantages__container {
@@ -82,10 +102,12 @@
 
 	.advantages__hello {
 		display: block;
+		position: relative;
+		z-index: 11;
 		flex-shrink: 0;
 		margin-right: 42px;
-		padding-top: 25px;
-		height: 506px;
+		padding-top: 5px;
+		height: 486px;
 		overflow: hidden;
 
 		img {
@@ -96,15 +118,15 @@
 	.advantages__list {
 		width: 100%;
 		text-align: left;
-		padding-top: 95px;
-	}
-
-	.advantages__item {
-		margin-bottom: 34px;
+		padding-top: 75px;
 	}
 
 	.advantages__image {
 		display: none;
+	}
+
+	.advantages__text-wrapper {
+		margin-bottom: 34px;
 	}
 }
 
@@ -119,6 +141,11 @@
 
 	.advantages__bg {
 		margin-top: 76px;
+		padding-bottom: 34px;
+
+		&::before {
+			border-top: 92px solid #fff;
+		}
 	}
 
 	.advantages__container.container {
@@ -144,24 +171,13 @@
 
 	.advantages__image {
 		display: block;
+		position: relative;
+		z-index: 11;
 		order: 0;
 		width: 100%;
 		height: 300px;
 		margin: 0 auto 57px;
 		overflow: hidden;
-
-		// &::after {
-		// 	content: "";
-		// 	position: absolute;
-		// 	bottom: 0;
-		// 	left: 0;
-		// 	right: 0;
-		// 	width: 300px;
-		// 	height: 17px;
-		// 	background: url(../img/iphone-shadow.png) center no-repeat;
-		// 	background-size: cover;
-		// 	z-index: 10;
-		// }
 	}
 
 	.advantages__desktop-img {
