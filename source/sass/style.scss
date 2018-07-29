@@ -12,6 +12,7 @@ $opensansbold: "Open Sans Bold", "Tahoma", sans-serif;
 
 @import "font-face.scss";
 @import "../slick/slick.scss";
+@import "blocks/container.scss";
 @import "blocks/button.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
@@ -48,11 +49,6 @@ body {
 	color: #283645;
 	background-color: #fff;
 	min-width: 320px;
-}
-
-.container {
-	width: 100%;
-	padding: 0 20px;
 }
 
 *, *::before, *::after {
