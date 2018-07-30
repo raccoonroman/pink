@@ -1,0 +1,159 @@
+.main-nav__wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 20;
+	background-color: rgba(#000, .3);
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 69px;
+	padding: 0 20px;
+}
+
+.main-nav__toggle {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	font-size: 0;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+
+	&:focus {
+		outline: none;
+	}
+
+	span {
+		display: block;
+		position: absolute;
+		top: 23px;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			display: block;
+			left: 0;
+			width: 100%;
+		}
+	}
+}
+
+.main-nav--closed .main-nav__toggle {
+	span {
+		left: 0;
+		right: 0;
+		height: 4px;
+		background: #fff;
+
+		&::before {
+			top: -10px;
+		}
+
+		&::after {
+			bottom: -10px;
+		}
+
+		&::before,
+		&::after {
+			height: 4px;
+			background-color: #fff;
+		}
+	}
+
+	&:hover span,
+	&:hover span::before,
+	&:hover span::after {
+		background: #d22856;
+	}
+
+	&:active span,
+	&:active span::before,
+	&:active span::after {
+		background: rgba(#d22856, .3);
+	}
+}
+
+.main-nav--opened .main-nav__toggle {
+	span {
+		left: 10px;
+		right: 10px;
+		height: 5px;
+		background: none;
+
+		&::before {
+			top: 0;
+			height: 5px;
+			background-color: #fff;
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			bottom: 0;
+			height: 5px;
+			background-color: #fff;
+			transform: rotate(-45deg);
+		}
+	}
+
+	&:hover span::before,
+	&:hover span::after {
+		background: #d22856;
+	}
+
+	&:active span::before,
+	&:active span::after {
+		background: rgba(#d22856, .3);
+	}
+}
+
+.main-nav__list {
+	@include ul;
+	transition: padding .3s;
+}
+
+.main-nav__list-item {
+	height: 63px;
+	overflow-y: hidden;
+	transition: height .3s;
+
+	a {
+		display: block;
+		padding: 15px 20px;
+		font-family: $opensansbold;
+		font-size: 18px;
+		line-height: 32px;
+		text-transform: uppercase;
+		color: inherit;
+		background-color: #283645;
+		box-shadow: inset 0 1px rgba(#fff, .15), 0 1px #000;
+
+
+		&[href]:hover,
+		&[href]:focus {
+			color: #d22856;
+		}
+
+		&[href]:active {
+			color: rgba(#d22856, .3);
+		}
+	}
+}
+
+@media (max-width: 959px) {
+	.main-nav--closed .main-nav__list-item {
+		height: 0;
+	}
+
+	.main-nav--opened .main-nav__list {
+		padding-top: 69px;
+	}
+
+	.main-nav--opened .main-nav__wrapper {
+		border-bottom: 1px solid #000;
+		background-color: transparent;
+	}
+}
