@@ -4,13 +4,12 @@
 	left: 0;
 	right: 0;
 	z-index: 20;
-	background-color: rgba(#000, .3);
-
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	height: 69px;
 	padding: 0 20px;
+	background-color: rgba(#000, .3);
 }
 
 .main-nav__toggle {
@@ -154,6 +153,16 @@
 
 	.main-nav--opened .main-nav__wrapper {
 		border-bottom: 1px solid #000;
-		background-color: transparent;
+		background-color: #283645;
+	}
+}
+
+@media (min-width: 660px) {
+	.main-nav__wrapper {
+		height: 109px;
+	}
+
+	.main-nav--opened .main-nav__list {
+		padding-top: 109px;
 	}
 }
