@@ -1,5 +1,15 @@
 .header-logo {
+	line-height: 0;
+}
+
+.header-logo__img {
 	width: 75px;
 	height: 23px;
-	line-height: 0;
+}
+
+@media (min-width: 660px) {
+	.header-logo__img {
+		width: 147px;
+		height: 40px;
+	}
 }

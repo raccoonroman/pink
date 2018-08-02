@@ -1,4 +1,21 @@
 .page-header {
 	color: #fff;
-	background-color: #2b3b4b;
+	background-color: #1d2631;
+}
+
+.page-header__bg {
+	height: 462px;
+	background-image:
+		url('../img/iphone-hand-mobile.png'),
+		url('../img/bg-back-mobile.jpg');
+	background-position: center 176px, center top;
+	background-repeat: no-repeat;
+	transition: background-position .25s;
+
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+		background-image:
+			url("../img/iphone-hand-mobile@2x.png"),
+			url("../img/bg-back-mobile@2x.jpg");
+		background-size: 320px auto;
+	}
 }

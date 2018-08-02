@@ -39,20 +39,12 @@
 		content: "";
 		position: absolute;
 		top: 0;
-		right: 0;
+		left: 0;
 		z-index: 10;
 		width: 100%;
 		border-right: 50vw solid transparent;
 		border-top: 32px solid #fff;
 		border-left: 50vw solid transparent;
-	}
-
-	img[width="660"] {
-		display: none;
-	}
-
-	img[width="2560"] {
-		display: none;
 	}
 }
 
@@ -99,15 +91,6 @@
 		&::before {
 			border-top: 68px solid #fff;
 		}
-
-		img[width="320"] {
-			display: none;
-		}
-
-		img[width="660"] {
-			display: block;
-			margin: 0 auto;
-		}
 	}
 }
 
@@ -139,15 +122,6 @@
 
 		&::before {
 			border-top: 104px solid #fff;
-		}
-
-		img[width="660"] {
-			display: none;
-		}
-
-		img[width="2560"] {
-			display: block;
-			margin: 0 auto;
 		}
 	}
 }
