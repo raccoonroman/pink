@@ -8,14 +8,49 @@
 	background-image:
 		url('../img/iphone-hand-mobile.png'),
 		url('../img/bg-back-mobile.jpg');
-	background-position: center 176px, center top;
+	background-position: center bottom, center top;
 	background-repeat: no-repeat;
-	transition: background-position .25s;
 
 	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
 		background-image:
 			url("../img/iphone-hand-mobile@2x.png"),
 			url("../img/bg-back-mobile@2x.jpg");
 		background-size: 320px auto;
+	}
+}
+
+.page-header__slogan {
+	display: none;
+}
+
+
+@media (min-width: 660px) {
+	.page-header__wrapper {
+		position: relative;
+	}
+
+	.page-header__bg {
+		height: 729px;
+		background-image:
+			url('../img/iphone-hand-tablet.png'),
+			url('../img/bg-back-tablet.jpg');
+
+		@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+			background-image:
+				url("../img/iphone-hand-tablet@2x.png"),
+				url("../img/bg-back-tablet@2x.jpg");
+			background-size: 660px auto, 1200px auto;
+		}
+	}
+
+	.page-header__slogan {
+		display: block;
+		width: 240px;
+		margin: 0;
+		padding-top: 202px;
+		padding-left: 66px;
+		font-family: $opensanslight;
+		font-size: 40px;
+		line-height: 50px;
 	}
 }

@@ -158,7 +158,7 @@
 
 	.main-nav--opened ~ .page-header__bg {
 		height: calc(462px - 66px);
-		background-position: center 110px, center -69px;
+		background-position: center bottom, center -66px;
 	}
 
 
@@ -187,5 +187,10 @@
 
 	.main-nav--opened .main-nav__list {
 		padding-top: 110px;
+	}
+
+	.main-nav--opened ~ .page-header__bg {
+		height: calc(729px - 110px);
+		background-position: center bottom, center -110px;
 	}
 }
