@@ -265,14 +265,34 @@
 		height: auto;
 		padding: 45px 0;
 		overflow: visible;
+
+		a {
+			padding: 0;
+			font-family: $opensans;
+			line-height: 18px;
+			text-transform: none;
+			background-color: transparent;
+			box-shadow: none;
+
+			&[href]:active {
+				color: rgba(#fff, .3);
+			}
+		}
 	}
 
-	.main-nav__list-item a {
-		padding: 0;
-		font-family: $opensans;
-		line-height: 18px;
-		text-transform: none;
-		background-color: transparent;
-		box-shadow: none;
+	.main-nav__list-item--active {
+		a {
+			position: relative;
+		}
+
+		a::after {
+			content: "";
+			position: absolute;
+			bottom: -14px;
+			left: 0;
+			right: 0;
+			height: 2px;
+			background-color: #fff;
+		}
 	}
 }
