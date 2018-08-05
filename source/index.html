@@ -9,32 +9,34 @@
 <body>
 <header class="page-header">
 	<nav class="main-nav main-nav--closed main-nav--nojs">
-		<div class="main-nav__wrapper">
-			<a class="main-nav__logo header-logo">
-				<picture>
-					<source media="(min-width: 960px)" srcset="img/logotype-white-desktop.svg">
-					<source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
-					<img class="header-logo__img" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип Пинк">
-				</picture>
-			</a>
-			<button class="main-nav__toggle main-nav__toggle--active" type="button">
-				<span>Открыть меню</span>
-			</button>
+		<div class="container">
+			<div class="main-nav__wrapper">
+				<a class="main-nav__logo header-logo">
+					<picture>
+						<source media="(min-width: 960px)" srcset="img/logotype-white-desktop.svg">
+						<source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
+						<img class="header-logo__img" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип Пинк">
+					</picture>
+				</a>
+				<button class="main-nav__toggle main-nav__toggle--active" type="button">
+					<span>Открыть меню</span>
+				</button>
+			</div>
+			<ul class="main-nav__list">
+				<li class="main-nav__list-item main-nav__list-item--active">
+					<a>Главная</a>
+				</li>
+				<li class="main-nav__list-item">
+					<a href="photo.html">Фотографии</a>
+				</li>
+				<li class="main-nav__list-item">
+					<a href="form.html">Конкурс</a>
+				</li>
+				<li class="main-nav__list-item">
+					<a href="https://htmlacademy.ru">HTML Academy</a>
+				</li>
+			</ul>
 		</div>
-		<ul class="main-nav__list">
-			<li class="main-nav__list-item main-nav__list-item--active">
-				<a>Главная</a>
-			</li>
-			<li class="main-nav__list-item">
-				<a href="photo.html">Фотографии</a>
-			</li>
-			<li class="main-nav__list-item">
-				<a href="form.html">Конкурс</a>
-			</li>
-			<li class="main-nav__list-item">
-				<a href="https://htmlacademy.ru">HTML Academy</a>
-			</li>
-		</ul>
 	</nav>
 	<div class="page-header__wrapper">
 		<div class="page-header__bg">

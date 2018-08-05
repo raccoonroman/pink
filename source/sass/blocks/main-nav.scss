@@ -1,3 +1,7 @@
+.main-nav .container {
+	padding: 0;
+}
+
 .main-nav__wrapper {
 	position: absolute;
 	top: 0;
@@ -5,16 +9,21 @@
 	right: 0;
 	z-index: 20;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-between;
 	height: 66px;
 	padding: 0 20px;
 	background-color: rgba(#000, .3);
 }
 
+.main-nav__logo {
+	margin-top: 22px;
+}
+
 .main-nav__toggle {
 	position: relative;
 	width: 50px;
+	margin-top: 8px;
 	height: 50px;
 	font-size: 0;
 	background: transparent;
@@ -156,7 +165,7 @@
 		background-color: #283645;
 	}
 
-	.main-nav--opened ~ .page-header__bg {
+	.main-nav--opened ~ .page-header__wrapper .page-header__bg {
 		height: calc(462px - 66px);
 		background-position: center bottom, center -66px;
 	}
@@ -185,12 +194,85 @@
 		height: 110px;
 	}
 
+	.main-nav__logo {
+		margin-top: 27px;
+	}
+
+	.main-nav__toggle {
+		margin-top: 31px;
+	}
+
 	.main-nav--opened .main-nav__list {
 		padding-top: 110px;
 	}
 
-	.main-nav--opened ~ .page-header__bg {
+	.main-nav--opened ~ .page-header__wrapper .page-header__bg {
 		height: calc(729px - 110px);
 		background-position: center bottom, center -110px;
+	}
+
+	.main-nav--opened ~ .page-header__wrapper .page-header__slogan {
+		padding-top: calc(202px - 110px);
+	}
+
+	.main-nav--opened ~ .page-header__wrapper .download {
+		top: calc(350px - 110px);
+	}
+}
+
+@media (min-width: 960px) {
+	.main-nav {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(0, 0, 0, .3);
+	}
+
+	.main-nav .container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		min-height: 110px;
+		padding: 0 10px;
+	}
+
+	.main-nav__wrapper {
+		position: static;
+		flex-grow: 1;
+		height: auto;
+		padding: 0;
+		background-color: transparent;
+	}
+
+	.main-nav__toggle {
+		display: none;
+	}
+
+	.main-nav__logo {
+		margin-top: 27px;
+	}
+
+	.main-nav__list {
+		display: flex;
+		justify-content: flex-end;
+		flex-grow: 3;
+	}
+
+	.main-nav__list-item {
+		margin-left: auto;
+		height: auto;
+		padding: 45px 0;
+		overflow: visible;
+	}
+
+	.main-nav__list-item a {
+		padding: 0;
+		font-family: $opensans;
+		line-height: 18px;
+		text-transform: none;
+		background-color: transparent;
+		box-shadow: none;
 	}
 }

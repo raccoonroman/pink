@@ -131,7 +131,8 @@
   height: 462px;
   background-image: url("../img/iphone-hand-mobile.png"), url("../img/bg-back-mobile.jpg");
   background-position: center bottom, center top;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  transition: height .25s, background-position .25s; }
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-header__bg {
       background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
@@ -157,10 +158,25 @@
     width: 240px;
     margin: 0;
     padding-top: 202px;
-    padding-left: 66px;
+    padding-left: 46px;
     font-family: "Open Sans Light", "Tahoma", sans-serif;
     font-size: 40px;
-    line-height: 50px; } }
+    line-height: 50px;
+    transition: padding-top .25s; } }
+
+@media (min-width: 960px) {
+  .page-header__wrapper {
+    position: static; }
+  .page-header__bg {
+    height: 853px;
+    background-image: url("../img/iphone-hand-desktop.png"), url("../img/bg-back-desktop.jpg"); } }
+  @media (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
+    .page-header__bg {
+      background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
+      background-size: 908px auto, 100% auto; } }
+
+.main-nav .container {
+  padding: 0; }
 
 .main-nav__wrapper {
   position: absolute;
@@ -169,15 +185,19 @@
   right: 0;
   z-index: 20;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   height: 66px;
   padding: 0 20px;
   background-color: rgba(0, 0, 0, 0.3); }
 
+.main-nav__logo {
+  margin-top: 22px; }
+
 .main-nav__toggle {
   position: relative;
   width: 50px;
+  margin-top: 8px;
   height: 50px;
   font-size: 0;
   background: transparent;
@@ -276,7 +296,7 @@
   .main-nav--opened .main-nav__wrapper {
     border-bottom: 1px solid #000;
     background-color: #283645; }
-  .main-nav--opened ~ .page-header__bg {
+  .main-nav--opened ~ .page-header__wrapper .page-header__bg {
     height: calc(462px - 66px);
     background-position: center bottom, center -66px; }
   .main-nav--nojs .main-nav__toggle {
@@ -292,11 +312,60 @@
 @media (min-width: 660px) and (max-width: 959px) {
   .main-nav__wrapper {
     height: 110px; }
+  .main-nav__logo {
+    margin-top: 27px; }
+  .main-nav__toggle {
+    margin-top: 31px; }
   .main-nav--opened .main-nav__list {
     padding-top: 110px; }
-  .main-nav--opened ~ .page-header__bg {
+  .main-nav--opened ~ .page-header__wrapper .page-header__bg {
     height: calc(729px - 110px);
-    background-position: center bottom, center -110px; } }
+    background-position: center bottom, center -110px; }
+  .main-nav--opened ~ .page-header__wrapper .page-header__slogan {
+    padding-top: calc(202px - 110px); }
+  .main-nav--opened ~ .page-header__wrapper .download {
+    top: calc(350px - 110px); } }
+
+@media (min-width: 960px) {
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3); }
+  .main-nav .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 110px;
+    padding: 0 10px; }
+  .main-nav__wrapper {
+    position: static;
+    flex-grow: 1;
+    height: auto;
+    padding: 0;
+    background-color: transparent; }
+  .main-nav__toggle {
+    display: none; }
+  .main-nav__logo {
+    margin-top: 27px; }
+  .main-nav__list {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 3; }
+  .main-nav__list-item {
+    margin-left: auto;
+    height: auto;
+    padding: 45px 0;
+    overflow: visible; }
+  .main-nav__list-item a {
+    padding: 0;
+    font-family: "Open Sans", "Tahoma", sans-serif;
+    line-height: 18px;
+    text-transform: none;
+    background-color: transparent;
+    box-shadow: none; } }
 
 .header-logo {
   line-height: 0; }
@@ -347,7 +416,8 @@
     position: absolute;
     top: 350px;
     left: 20px;
-    background-color: transparent; }
+    background-color: transparent;
+    transition: top .25s; }
   .download__wrapper {
     width: 300px; }
   .download__desktop-link {
