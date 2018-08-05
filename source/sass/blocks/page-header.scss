@@ -46,10 +46,10 @@
 
 	.page-header__slogan {
 		display: block;
-		width: 240px;
+		width: 250px;
 		margin: 0;
 		padding-top: 202px;
-		padding-left: 46px;
+		padding-left: 30px;
 		font-family: $opensanslight;
 		font-size: 40px;
 		line-height: 50px;
@@ -75,5 +75,11 @@
 				url("../img/bg-back-desktop@2x.jpg");
 			background-size: 908px auto, 100% auto;
 		}
+	}
+
+	.page-header__slogan {
+		padding-top: 222px;
+		font-size: 50px;
+		line-height: 59px;
 	}
 }

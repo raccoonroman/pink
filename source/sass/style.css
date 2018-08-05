@@ -155,10 +155,10 @@
 @media (min-width: 660px) {
   .page-header__slogan {
     display: block;
-    width: 240px;
+    width: 250px;
     margin: 0;
     padding-top: 202px;
-    padding-left: 46px;
+    padding-left: 30px;
     font-family: "Open Sans Light", "Tahoma", sans-serif;
     font-size: 40px;
     line-height: 50px;
@@ -174,6 +174,12 @@
     .page-header__bg {
       background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
       background-size: 908px auto, 100% auto; } }
+
+@media (min-width: 960px) {
+  .page-header__slogan {
+    padding-top: 222px;
+    font-size: 50px;
+    line-height: 59px; } }
 
 .main-nav .container {
   padding: 0; }
@@ -359,13 +365,25 @@
     height: auto;
     padding: 45px 0;
     overflow: visible; }
-  .main-nav__list-item a {
-    padding: 0;
-    font-family: "Open Sans", "Tahoma", sans-serif;
-    line-height: 18px;
-    text-transform: none;
-    background-color: transparent;
-    box-shadow: none; } }
+    .main-nav__list-item a {
+      padding: 0;
+      font-family: "Open Sans", "Tahoma", sans-serif;
+      line-height: 18px;
+      text-transform: none;
+      background-color: transparent;
+      box-shadow: none; }
+      .main-nav__list-item a[href]:active {
+        color: rgba(255, 255, 255, 0.3); }
+  .main-nav__list-item--active a {
+    position: relative; }
+  .main-nav__list-item--active a::after {
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #fff; } }
 
 .header-logo {
   line-height: 0; }
@@ -379,11 +397,29 @@
     width: 147px;
     height: 40px; } }
 
+.download-desktop-link {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 0 16px;
+  vertical-align: top;
+  text-align: center;
+  font-family: "Open Sans Bold", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: inherit;
+  border: 3px solid #fff;
+  border-radius: 28px; }
+  .download-desktop-link:hover, .download-desktop-link:focus {
+    color: #d22856;
+    background-color: #fff; }
+  .download-desktop-link:active {
+    color: rgba(210, 40, 86, 0.3); }
+
 .download {
   color: #fff;
   background-color: #1d2631; }
 
-.download__wrapper {
+.download .container {
   width: 280px;
   padding: 28px 0 28px;
   margin: 0 auto; }
@@ -418,7 +454,7 @@
     left: 20px;
     background-color: transparent;
     transition: top .25s; }
-  .download__wrapper {
+  .download .container {
     width: 300px; }
   .download__desktop-link {
     margin-bottom: 40px; }
@@ -428,23 +464,22 @@
   .download__desc {
     font-size: 18px; } }
 
-.download-desktop-link {
-  display: inline-block;
-  width: 100%;
-  padding: 14px 0 16px;
-  vertical-align: top;
-  text-align: center;
-  font-family: "Open Sans Bold", "Tahoma", sans-serif;
-  font-size: 18px;
-  line-height: 18px;
-  color: inherit;
-  border: 3px solid #fff;
-  border-radius: 28px; }
-  .download-desktop-link:hover, .download-desktop-link:focus {
-    color: #d22856;
-    background-color: #fff; }
-  .download-desktop-link:active {
-    color: rgba(210, 40, 86, 0.3); }
+@media (min-width: 960px) {
+  .download {
+    top: 422px;
+    right: 0;
+    overflow-x: hidden; }
+  .download .container {
+    width: 960px; }
+  .download__desktop-link,
+  .download__list,
+  .download__desc {
+    width: 300px; }
+  .download__desktop-link {
+    display: block;
+    margin-bottom: 63px; }
+  .download__list {
+    margin-bottom: 48px; } }
 
 .advantages {
   padding-top: 40px; }

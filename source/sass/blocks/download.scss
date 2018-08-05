@@ -3,7 +3,7 @@
 	background-color: #1d2631;
 }
 
-.download__wrapper {
+.download .container {
 	width: 280px;
 	padding: 28px 0 28px;
 	margin: 0 auto;
@@ -44,7 +44,8 @@
 		transition: top .25s;
 	}
 
-	.download__wrapper {
+	.download .container {
+
 		width: 300px;
 	}
 
@@ -59,5 +60,32 @@
 
 	.download__desc {
 		font-size: 18px;
+	}
+}
+
+@media (min-width: 960px) {
+	.download {
+		top: 422px;
+		right: 0;
+		overflow-x: hidden;
+	}
+
+	.download .container {
+		width: 960px;
+	}
+
+	.download__desktop-link,
+	.download__list,
+	.download__desc {
+		width: 300px;
+	}
+
+	.download__desktop-link {
+		display: block;
+		margin-bottom: 63px;
+	}
+
+	.download__list {
+		margin-bottom: 48px;
 	}
 }
