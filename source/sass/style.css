@@ -355,10 +355,9 @@
   .main-nav__toggle {
     display: none; }
   .main-nav__logo {
-    margin-top: 27px; }
+    margin: 27px 0; }
   .main-nav__list {
     display: flex;
-    justify-content: flex-end;
     flex-grow: 3; }
   .main-nav__list-item {
     margin-left: auto;
