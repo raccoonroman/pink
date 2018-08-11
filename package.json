@@ -1,13 +1,8 @@
 {
   "name": "pink",
   "version": "1.0.0",
-  "description": "",
+  "description": "training layout",
   "main": "index.js",
-  "dependencies": {
-    "gulp-sass": "^4.0.1",
-    "gulp": "^3.9.1"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,10 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/raccoonroman/pink.git"
   },
-  "author": "",
+  "author": "ronir",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/raccoonroman/pink/issues"
   },
-  "homepage": "https://github.com/raccoonroman/pink#readme"
+  "homepage": "https://github.com/raccoonroman/pink#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
 }
