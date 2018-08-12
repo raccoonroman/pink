@@ -21,20 +21,15 @@
     "browser-sync": "^2.24.6",
     "gulp": "^3.9.1",
     "gulp-csso": "^3.0.1",
-    "gulp-imagemin": "^4.1.0",
     "gulp-plumber": "^1.2.0",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.1",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-tinify": "^1.0.2",
     "gulp-webp": "^3.0.0"
   },
   "dependencies": {
     "lodash": "^4.17.10"
-  },
-  // "scripts": {
-  //   "editorconfig": "editorconfig-cli",
-  //   "test": "npm run editorconfig",
-  //   "build": "gulp sass && gulp postcss",
-  //   "start": "npm run build && gulp serve"
-  // }
+  }
 }

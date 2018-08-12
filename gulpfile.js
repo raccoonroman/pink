@@ -5,11 +5,12 @@ var sass = require('gulp-sass');
 var plumber = require('gulp-plumber');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
-// var server = require('browser-sync').create();
 var minify = require('gulp-csso');
 var rename = require("gulp-rename");
-var imagemin = require('gulp-imagemin');
-var webp = require('gulp-webp');
+var imgmin = require('gulp-tinify');
+var svgmin = require('gulp-svgmin');
+var browserSync = require('browser-sync');
+
 
 gulp.task('sass', function () {
 	return gulp.src('source/sass/style.scss')
@@ -19,39 +20,34 @@ gulp.task('sass', function () {
 			autoprefixer()
 		]))
 		.pipe(gulp.dest('source/css'))
+		.pipe(browserSync.reload({stream: true}))
 		.pipe(minify())
 		.pipe(rename('style.min.css'))
-		.pipe(gulp.dest('source/css'))
-		// .pipe(server.stream());
+		.pipe(gulp.dest('build/css'))
 });
 
-// gulp.task('sass:watch', function () {
-// 	gulp.watch('source/sass/style.scss', ['sass']);
-// });
-
-gulp.task('serve', ['sass'], function () {
-	server.init({
-		server: 'source/'
-	});
-
-	gulp.watch('source/sass/style.scss', ['sass']);
-	gulp.watch('source/*.html')
-		.on('change', server.reload);
+gulp.task('browser-sync', function () {
+	browserSync({
+		server: {
+			baseDir: "source"
+		},
+		notify: false
+	})
 });
 
-gulp.task('images', function() {
-	return gulp.src('source/img/*.{png,jpg,svg}')
-		.pipe(imagemin([
-			imagemin.optipng({optimizationLevel: 3}),
-			imagemin.jpegtran({progressive: true}),
-			imagemin.svgo()
-		]))
+gulp.task('watch', ['sass', 'browser-sync'], function () {
+	gulp.watch('source/sass/**/*.scss', ['sass']);
+	gulp.watch("source/*.html", browserSync.reload)
+});
 
-	.pipe(gulp.dest('source/img'));
-})
+gulp.task('img', function() {
+	gulp.src('source/img/*.{png,jpg}')
+		.pipe(imgmin('m9CBTOsBlI9zd4IYtwBwTK6kcks2YDT6'))
+		.pipe(gulp.dest('build/img'));
+});
 
-gulp.task('webp', function() {
-	return gulp.src('source/img/*.{png,jpg}')
-	.pipe(webp({quality: 90}))
-	.pipe(gulp.dest('source/img'));
-})
+gulp.task('svg', function () {
+	return gulp.src('source/img/*.svg')
+		.pipe(svgmin())
+		.pipe(gulp.dest('build/img'));
+});
