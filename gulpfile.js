@@ -5,7 +5,8 @@ var sass = require('gulp-sass');
 var plumber = require('gulp-plumber');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
-var minify = require('gulp-csso');
+var cssmin = require('gulp-csso');
+var jsmin = require('gulp-uglify');
 var rename = require("gulp-rename");
 var imgmin = require('gulp-tinify');
 var svgmin = require('gulp-svgmin');
@@ -17,11 +18,11 @@ gulp.task('sass', function () {
 		.pipe(plumber())
 		.pipe(sass())
 		.pipe(postcss([
-			autoprefixer()
+			autoprefixer(['last 1 version'])
 		]))
 		.pipe(gulp.dest('source/css'))
 		.pipe(browserSync.reload({stream: true}))
-		.pipe(minify())
+		.pipe(cssmin())
 		.pipe(rename('style.min.css'))
 		.pipe(gulp.dest('build/css'))
 });
@@ -50,4 +51,10 @@ gulp.task('svg', function () {
 	return gulp.src('source/img/*.svg')
 		.pipe(svgmin())
 		.pipe(gulp.dest('build/img'));
+});
+
+gulp.task('minjs', function () {
+	return gulp.src('source/js/**/*.js')
+		.pipe(jsmin())
+		.pipe(gulp.dest('build/js'));
 });
