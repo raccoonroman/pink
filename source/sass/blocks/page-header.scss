@@ -26,6 +26,30 @@
 }
 
 
+// style for page form
+.page-header__wrapper-title {
+	height: 237px;
+	padding-top: 95px;
+	color: #fff;
+	background-image: url('../img/bg-form-mobile.jpg');
+	background-position: center top;
+	transition: height .25s, background-position .25s, padding .25s;
+
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+		background-image:url('../img/bg-form-mobile@2x.jpg');
+		background-size: auto 237px;
+	}
+}
+
+.page-header__title {
+	margin: 0;
+	font-family: $opensanslight;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+
+
 @media (min-width: 660px) {
 	.page-header__wrapper {
 		position: relative;

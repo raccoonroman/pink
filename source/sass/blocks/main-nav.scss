@@ -170,6 +170,11 @@
 		background-position: center bottom, center -66px;
 	}
 
+	.main-nav--opened ~ .page-header__wrapper-title {
+		height: calc(237px - 66px);
+		padding-top: calc(95px - 66px);
+		background-position: center -66px;
+	}
 
 	.main-nav--nojs .main-nav__toggle {
 		display: none;
