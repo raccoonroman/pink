@@ -2,29 +2,47 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Пинк - конкурс</title>
+	<title>pink - конкурс</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="stylesheet" href="sass/style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#2bb8e0">
+	<meta name="msapplication-TileColor" content="#9f00a7">
+	<meta name="theme-color" content="#fff">
+	<!-- <link rel="stylesheet" href="css/normalize-min.css"> -->
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
 </head>
+
 <body>
 <header class="page-header">
-	<nav class="main-nav">
-		<a class="main-nav__logo header-logo">
-			<img class="header-logo__img" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип Пинк">
-		</a>
-		<button class="main-nav__toggle" type="button">Открыть меню</button>
-		<div class="main-nav__wrapper">
-			<ul class="main-nav__list nav-list">
-				<li class="nav-list__item">
+	<nav class="main-nav main-nav--closed main-nav--nojs">
+		<div class="container">
+			<div class="main-nav__wrapper">
+				<a class="main-nav__logo header-logo">
+					<picture>
+						<source media="(min-width: 960px)" srcset="img/logotype-white-desktop.svg">
+						<source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
+						<img class="header-logo__img" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип Пинк">
+					</picture>
+				</a>
+				<button class="main-nav__toggle main-nav__toggle--active" type="button">
+					<span>Открыть меню</span>
+				</button>
+			</div>
+			<ul class="main-nav__list">
+				<li class="main-nav__list-item">
 					<a href="index.html">Главная</a>
 				</li>
-				<li class="nav-list__item">
+				<li class="main-nav__list-item">
 					<a href="photo.html">Фотографии</a>
 				</li>
-				<li class="nav-list__item nav-list__item--active">
+				<li class="main-nav__list-item main-nav__list-item--active">
 					<a>Конкурс</a>
 				</li>
-				<li class="nav-list__item">
+				<li class="main-nav__list-item">
 					<a href="https://htmlacademy.ru">HTML Academy</a>
 				</li>
 			</ul>
@@ -208,5 +226,7 @@
 	</div>
 </section>
 
+
+<script src="js/page-form/script.js"></script>
 </body>
 </html>
