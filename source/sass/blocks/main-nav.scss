@@ -223,6 +223,12 @@
 	.main-nav--opened ~ .page-header__wrapper .download {
 		top: calc(350px - 110px);
 	}
+
+	.main-nav--opened ~ .page-header__wrapper-title {
+		height: calc(440px - 110px);
+		padding-top: calc(180px - 110px);
+		background-position: center -110px;
+	}
 }
 
 @media (min-width: 960px) {

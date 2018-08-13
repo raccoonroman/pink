@@ -81,6 +81,22 @@
 		line-height: 50px;
 		transition: padding-top .25s;
 	}
+
+	.page-header__wrapper-title {
+		height: 440px;
+		padding-top: 180px;
+		background-image: url('../img/bg-form-tablet.jpg');
+
+		@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+			background-image:url('../img/bg-form-tablet@2x.jpg');
+			background-size: auto 440px;
+		}
+	}
+
+	.page-header__title {
+		font-size: 50px;
+		line-height: 60px;
+	}
 }
 
 
