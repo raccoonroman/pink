@@ -59,10 +59,10 @@
 	<section class="story">
 		<h2 class="visually-hidden">Шанс выиграть ценный приз</h2>
 		<div class="container">
-			<p class="story__desc">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+			<p class="story__desc">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
 		</div>
 		<form class="story__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
-			<div class="container story__container">
+			<div class="container story__container story__container--name">
 				<fieldset class="story__field story__field--name">
 					<ul class="story__list">
 						<li class="story__item">
@@ -81,7 +81,7 @@
 				</fieldset>
 			</div>
 
-			<div class="container story__container">
+			<div class="container story__container story__container--achievement">
 				<fieldset class="story__field story__field--achievement">
 					<legend class="story__legend">Ваши безбашенные<br>достижения в путешествии</legend>
 					<ul class="story__list">
@@ -113,9 +113,9 @@
 				</fieldset>
 			</div>
 
-			<div class="container story__container">
+			<div class="container story__container story__container--contacts">
 				<fieldset class="story__field story__field--contacts">
-					<legend class="visually-hidden">Контактная информация</legend>
+					<legend class="story__legend">Контактная информация</legend>
 					<ul class="story__list">
 						<li class="story__item">
 							<label for="user-phone">Номер телефона</label>
@@ -129,9 +129,9 @@
 				</fieldset>
 			</div>
 
-			<div class="container story__container">
+			<div class="container story__container story__container--OS">
 				<fieldset class="story__field story__field--OS">
-					<legend class="story__legend">С каким приложением путешествовали?</legend>
+					<legend class="story__legend">С каким приложением <br>путешествовали?</legend>
 					<ul class="story__list">
 						<li class="story__item">
 							<input class="visually-hidden" id="pink-for-iOS" type="radio" name="story-OS" value="pink-for-iOS" checked>
@@ -149,7 +149,7 @@
 				</fieldset>
 			</div>
 
-			<div class="container story__container">
+			<div class="container story__container story__container--emotions">
 				<fieldset class="story__field story__field--emotions">
 					<legend class="story__legend">Опишите свои эмоции</legend>
 					<ul class="story__list">
@@ -162,7 +162,7 @@
 				</fieldset>
 			</div>
 
-			<div class="container">
+			<div class="container story__submit">
 				<button class="btn story__btn">Отправить форму</button>
 				<small class="story__note">
 					<sup>*</sup> — обязательные поля
@@ -201,7 +201,7 @@
 	<div class="page-footer__copyright copyright">
 		<p class="copyright__text">Разработано</p>
 		<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="html academy">
-			<svg fill="#d22856" width="26.94" height="34.09" xmlns="http://www.w3.org/2000/svg">
+			<svg fill="#d22856" width="26.94" height="34.09">
 				<path d="M13.62 0h-.15L0 1.41v24.66l13.47 8 13.43-8V1.41zM25 12.13l-11.51-6.8v-.1h-.08l-.09-.06v.11l-11.4 6.84v-9l11.55-1.18L25 3.15zM13.4 6.79l11.52 6.71-4.48 2.64-7.09-4.22v1.41l5.9 3.52-.86.5-5-3v1.42l3.83 2.27-.79.52-3-1.78v1.42l1.85 1.09-1.8 1.08L2 13.62zM1.92 15.13l11.42 6.79v1l-7.93-4.69v1.42l8 4.8v1.07l-8-4.74v1.42l8 4.82 8.14-4.87V17L25 15v10l-11.53 6.85L1.92 25z"/>
 			</svg>
 			</svg>

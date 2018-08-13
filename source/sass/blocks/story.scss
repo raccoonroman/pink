@@ -1,5 +1,9 @@
 .story__desc {
 	margin: 45px 0 34px;
+
+	span {
+		display: none;
+	}
 }
 
 .story__container:nth-of-type(even) {
@@ -122,6 +126,10 @@
 
 .story__field--contacts {
 	padding: 32px 0 25px;
+
+	.story__legend {
+		display: none;
+	}
 
 	.story__item {
 		margin-bottom: 17px;
@@ -263,5 +271,123 @@
 		vertical-align: top;
 		font-size: inherit;
 		color: #d22856;
+	}
+}
+
+@media (min-width: 660px) {
+	.story__form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.story__container--OS {
+		order: 1;
+	}
+
+	.story__container--contacts {
+		order: 2;
+	}
+
+	.story__container--achievement {
+		order: 3;
+	}
+
+	.story__container--emotions {
+		order: 4;
+	}
+
+	.story__submit {
+		order: 5;
+	}
+
+	.story__container--OS.story__container {
+		background-color: #fff;
+	}
+
+	.story__desc {
+		margin: 92px 18px 72px;
+		font-size: 18px;
+		span {
+			display: inline;
+		}
+	}
+
+	.story__field--name {
+		margin-bottom: 6px;
+
+		.story__item {
+			display: flex;
+			align-items: center;
+			margin-bottom: 52px;
+		}
+
+		label {
+			margin-right: 20px;
+			padding: 0;
+		}
+	}
+
+	.story__field--OS {
+		margin-bottom: 58px;
+		padding: 0 60px 12px;
+		border: 2px solid #e5e5e5;
+
+		.story__legend {
+			padding: 0 25px;
+			margin-bottom: 48px;
+
+			br {
+				display: none;
+			}
+		}
+
+		.story__item {
+			margin-bottom: 48px;
+		}
+
+		label {
+			padding-left: 62px;
+		}
+	}
+
+	.story__field--contacts {
+		padding: 0 58px;
+		border: 2px solid #e5e5e5;
+
+		.story__legend {
+			display: block;
+			padding: 0 30px;
+			margin-bottom: 37px;
+		}
+
+		.story__item {
+			display: flex;
+			flex-direction: column;
+		}
+
+		label {
+			order: 1;
+			margin-bottom: 10px;
+		}
+
+		input {
+			margin-bottom: 10px;
+			background-repeat: no-repeat;
+		}
+
+		input[name="user-phone"] {
+			background-image:
+				url('../img/icon-phone.svg'),
+				linear-gradient(to left, #e5e5e5 60px, #fff 60px);
+			background-position: right 20px center, center;
+		}
+
+		input[name="user-email"] {
+			background-image:
+				url('../img/icon-mail.svg'),
+				linear-gradient(to left, #e5e5e5 60px, #fff 60px);
+			background-position: right 21px center, center;
+
+		}
 	}
 }
