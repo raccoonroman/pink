@@ -33,6 +33,7 @@
 	color: #fff;
 	background-image: url('../img/bg-form-mobile.jpg');
 	background-position: center top;
+	background-repeat: no-repeat;
 	transition: height .25s, background-position .25s, padding .25s;
 
 	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -123,5 +124,22 @@
 		padding-top: 222px;
 		font-size: 50px;
 		line-height: 59px;
+	}
+
+	.page-header__wrapper-title {
+		height: 394px;
+		padding-top: 173px;
+		background-image: url('../img/bg-form-desktop.jpg');
+
+		@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+			background-image:url('../img/bg-form-desktop@2x.jpg');
+			background-size: auto 394px;
+		}
+	}
+
+	.page-header__title {
+		br:first-child {
+			display: none;
+		}
 	}
 }
