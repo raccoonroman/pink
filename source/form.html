@@ -84,114 +84,116 @@
 		<div class="container">
 			<p class="story__desc">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
 		</div>
-		<form class="story__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
-			<div class="container story__container story__container--name">
-				<fieldset class="story__field story__field--name">
-					<ul class="story__list">
-						<li class="story__item">
-							<label for="user-surname">Фамилия:</label>
-							<input id="user-surname" placeholder="Укажите фамилию *" type="text" name="user-surname" required>
-						</li>
-						<li class="story__item">
-							<label for="user-name">Имя:</label>
-							<input id="user-name" placeholder="Введите ваше имя *" type="text" name="user-name" required>
-						</li>
-						<li class="story__item">
-							<label for="user-patronymic">Отчество:</label>
-							<input id="user-patronymic" placeholder="Ну и отчество тоже" type="text" name="user-patronymic">
-						</li>
-					</ul>
-				</fieldset>
-			</div>
+		<div class="container story__form-container">
+			<form class="story__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+				<div class="container story__container story__container--name">
+					<fieldset class="story__field story__field--name">
+						<ul class="story__list">
+							<li class="story__item">
+								<label for="user-surname">Фамилия:</label>
+								<input id="user-surname" placeholder="Укажите фамилию *" type="text" name="user-surname" required>
+							</li>
+							<li class="story__item">
+								<label for="user-name">Имя:</label>
+								<input id="user-name" placeholder="Введите ваше имя *" type="text" name="user-name" required>
+							</li>
+							<li class="story__item">
+								<label for="user-patronymic">Отчество:</label>
+								<input id="user-patronymic" placeholder="Ну и отчество тоже" type="text" name="user-patronymic">
+							</li>
+						</ul>
+					</fieldset>
+				</div>
 
-			<div class="container story__container story__container--achievement">
-				<fieldset class="story__field story__field--achievement">
-					<legend class="story__legend">Ваши безбашенные <br>достижения в путешествии</legend>
-					<ul class="story__list">
-						<li class="story__item">
-							<input class="visually-hidden" type="checkbox" id="story-selfie" name="selfie" checked>
-							<label for="story-selfie">Сделал селфи с акулой</label>
-						</li>
-						<li class="story__item">
-							<input class="visually-hidden" type="checkbox" id="story-burned" name="burned" checked>
-							<label for="story-burned">Обгорел на пляже</label>
-						</li>
-						<li class="story__item">
-							<input class="visually-hidden" type="checkbox" id="story-chuck-norris" name="chuck-norris">
-							<label for="story-chuck-norris">Видел Чака Норриса</label>
-						</li>
-						<li class="story__item">
-							<input class="visually-hidden" type="checkbox" id="story-souvenirs" name="souvenirs">
-							<label for="story-souvenirs">Накупил сувениров</label>
-						</li>
-						<li class="story__item">
-							<input class="visually-hidden" type="checkbox" id="story-tower" name="tower" checked>
-							<label for="story-tower">Удержал башню</label>
-						</li>
-						<li class="story__item">
-							<input class="visually-hidden" type="checkbox" id="story-hotel" name="hotel">
-							<label for="story-hotel">Разгромил отель</label>
-						</li>
-					</ul>
-				</fieldset>
-			</div>
+				<div class="container story__container story__container--achievement">
+					<fieldset class="story__field story__field--achievement">
+						<legend class="story__legend">Ваши безбашенные <br>достижения в путешествии</legend>
+						<ul class="story__list">
+							<li class="story__item">
+								<input class="visually-hidden" type="checkbox" id="story-selfie" name="selfie" checked>
+								<label for="story-selfie">Сделал селфи с акулой</label>
+							</li>
+							<li class="story__item">
+								<input class="visually-hidden" type="checkbox" id="story-burned" name="burned" checked>
+								<label for="story-burned">Обгорел на пляже</label>
+							</li>
+							<li class="story__item">
+								<input class="visually-hidden" type="checkbox" id="story-chuck-norris" name="chuck-norris">
+								<label for="story-chuck-norris">Видел Чака Норриса</label>
+							</li>
+							<li class="story__item">
+								<input class="visually-hidden" type="checkbox" id="story-souvenirs" name="souvenirs">
+								<label for="story-souvenirs">Накупил сувениров</label>
+							</li>
+							<li class="story__item">
+								<input class="visually-hidden" type="checkbox" id="story-tower" name="tower" checked>
+								<label for="story-tower">Удержал башню</label>
+							</li>
+							<li class="story__item">
+								<input class="visually-hidden" type="checkbox" id="story-hotel" name="hotel">
+								<label for="story-hotel">Разгромил отель</label>
+							</li>
+						</ul>
+					</fieldset>
+				</div>
 
-			<div class="container story__container story__container--contacts">
-				<fieldset class="story__field story__field--contacts">
-					<legend class="story__legend">Контактная информация</legend>
-					<ul class="story__list">
-						<li class="story__item">
-							<label for="user-phone">Номер телефона</label>
-							<input id="user-phone" placeholder="Номер, пожалуйста" type="tel" name="user-phone">
-						</li>
-						<li class="story__item">
-							<label for="user-email">Адрес почты</label>
-							<input id="user-email" placeholder="Введите почту *" type="email" name="user-email">
-						</li>
-					</ul>
-				</fieldset>
-			</div>
+				<div class="container story__container story__container--contacts">
+					<fieldset class="story__field story__field--contacts">
+						<legend class="story__legend">Контактная информация</legend>
+						<ul class="story__list">
+							<li class="story__item">
+								<label for="user-phone">Номер телефона</label>
+								<input id="user-phone" placeholder="Номер, пожалуйста" type="tel" name="user-phone">
+							</li>
+							<li class="story__item">
+								<label for="user-email">Адрес почты</label>
+								<input id="user-email" placeholder="Введите почту *" type="email" name="user-email">
+							</li>
+						</ul>
+					</fieldset>
+				</div>
 
-			<div class="container story__container story__container--OS">
-				<fieldset class="story__field story__field--OS">
-					<legend class="story__legend">С каким приложением <br>путешествовали?</legend>
-					<ul class="story__list">
-						<li class="story__item">
-							<input class="visually-hidden" id="pink-for-iOS" type="radio" name="story-OS" value="pink-for-iOS" checked>
-							<label for="pink-for-iOS">Pink для iOS</label>
-						</li>
-						<li class="story__item">
-							<input class="visually-hidden" id="pink-for-andorid" type="radio" name="story-OS" value="pink-for-andorid">
-							<label for="pink-for-andorid">Pink на Android</label>
-						</li>
-						<li class="story__item">
-							<input class="visually-hidden" id="pink-for-WP" type="radio" name="story-OS" value="pink-for-WP">
-							<label for="pink-for-WP">Windows Phone</label>
-						</li>
-					</ul>
-				</fieldset>
-			</div>
+				<div class="container story__container story__container--OS">
+					<fieldset class="story__field story__field--OS">
+						<legend class="story__legend">С каким приложением <br>путешествовали?</legend>
+						<ul class="story__list">
+							<li class="story__item">
+								<input class="visually-hidden" id="pink-for-iOS" type="radio" name="story-OS" value="pink-for-iOS" checked>
+								<label for="pink-for-iOS">Pink для iOS</label>
+							</li>
+							<li class="story__item">
+								<input class="visually-hidden" id="pink-for-andorid" type="radio" name="story-OS" value="pink-for-andorid">
+								<label for="pink-for-andorid">Pink на Android</label>
+							</li>
+							<li class="story__item">
+								<input class="visually-hidden" id="pink-for-WP" type="radio" name="story-OS" value="pink-for-WP">
+								<label for="pink-for-WP">Windows Phone</label>
+							</li>
+						</ul>
+					</fieldset>
+				</div>
 
-			<div class="container story__container story__container--emotions">
-				<fieldset class="story__field story__field--emotions">
-					<legend class="story__legend">Опишите свои эмоции</legend>
-					<ul class="story__list">
-						<li class="story__item">
-							<label>
-								<textarea placeholder="Можно прям в красках, не стесняясь в выражениях" name="story-emotions"></textarea>
-							</label>
-						</li>
-					</ul>
-				</fieldset>
-			</div>
+				<div class="container story__container story__container--emotions">
+					<fieldset class="story__field story__field--emotions">
+						<legend class="story__legend">Опишите свои эмоции</legend>
+						<ul class="story__list">
+							<li class="story__item">
+								<label>
+									<textarea placeholder="Можно прям в красках, не стесняясь в выражениях" name="story-emotions"></textarea>
+								</label>
+							</li>
+						</ul>
+					</fieldset>
+				</div>
 
-			<div class="container story__submit">
-				<button class="btn story__btn">Отправить форму</button>
-				<small class="story__note">
-					<sup>*</sup> — обязательные поля
-				</small>
-			</div>
-		</form>
+				<div class="container story__submit">
+					<button class="btn story__btn">Отправить форму</button>
+					<small class="story__note">
+						<sup>*</sup> — обязательные <span>для заполнения </span>поля
+					</small>
+				</div>
+			</form>
+		</div>
 	</section>
 </main>
 
