@@ -25,7 +25,7 @@ function filter(n) {
 
 function showFilters(n) {
 	var i;
-	var slides = document.getElementsByClassName("upload__range-item");
+	var slides = document.getElementsByClassName("js-range-slides");
 	var filters = document.getElementsByClassName("upload__filter-btn");
 	for (i = 0; i < slides.length; i++) {
 		slides[i].style.display = "none";
