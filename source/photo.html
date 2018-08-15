@@ -2,52 +2,99 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Пинк - фотографии</title>
+	<title>pink - фотографии</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="stylesheet" href="sass/style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#2bb8e0">
+	<meta name="msapplication-TileColor" content="#9f00a7">
+	<meta name="theme-color" content="#fff">
+	<!-- <link rel="stylesheet" href="css/normalize-min.css"> -->
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
 </head>
+
 <body>
+<!-- Спрайт свг -->
+<svg aria-hidden="true" style="display:none;">
+	<symbol viewBox="0 0 26.943 34.09" id="logo-html-academy">
+		<title>Логотип html-academy</title>
+		<path d="M13.62 0h-.15L0 1.41v24.66l13.47 8 13.43-8V1.41zM25 12.13l-11.51-6.8v-.1h-.08l-.09-.06v.11l-11.4 6.84v-9l11.55-1.18L25 3.15zM13.4 6.79l11.52 6.71-4.48 2.64-7.09-4.22v1.41l5.9 3.52-.86.5-5-3v1.42l3.83 2.27-.79.52-3-1.78v1.42l1.85 1.09-1.8 1.08L2 13.62zM1.92 15.13l11.42 6.79v1l-7.93-4.69v1.42l8 4.8v1.07l-8-4.74v1.42l8 4.82 8.14-4.87V17L25 15v10l-11.53 6.85L1.92 25z"/>
+	</symbol>
+	<symbol viewBox="0 0 146.3 40.38">
+		<title>Логотип pink</title>
+		<path id="footer-logo-text" d="M71.87 18.66a1.29 1.29 0 0 1 1.26-1.29h7.18c5.09 0 8.44 2.71 8.44 7.15v.06c0 4.86-4.06 7.37-8.86 7.37h-5.47v6.83a1.28 1.28 0 1 1-2.55 0V18.66zm8.12 11c3.73 0 6.18-2 6.18-5v-.06c0-3.22-2.41-4.89-6-4.89h-5.7v9.91zM93.6 18.5a1.28 1.28 0 1 1 2.55 0v20.28a1.28 1.28 0 1 1-2.55 0zM102.74 18.53a1.28 1.28 0 0 1 1.26-1.25h.35a1.55 1.55 0 0 1 1.29.74l13.69 17.45v-17a1.24 1.24 0 1 1 2.48 0v20.35a1.14 1.14 0 0 1-1.16 1.18h-.13a1.73 1.73 0 0 1-1.32-.77l-14-17.87v17.46a1.26 1.26 0 0 1-1.2 1.25 1.24 1.24 0 0 1-1.22-1.25V18.53zM128.17 18.5a1.28 1.28 0 1 1 2.55 0v12.33l12.84-13.16a1.43 1.43 0 0 1 1-.45 1.28 1.28 0 0 1 1.23 1.26 1.25 1.25 0 0 1-.42.9l-8 7.92L146 37.86a1.43 1.43 0 0 1 .35.93 1.31 1.31 0 0 1-1.35 1.29 1.21 1.21 0 0 1-1-.58L135.59 29l-4.87 4.86v4.89a1.27 1.27 0 1 1-2.54 0V18.5z"/>
+		<path id="footer-logo-glasses" fill="#d22856" d="M60.46 28L55.29 6.65C54.93 4.3 52.69 0 46.69 0a1.5 1.5 0 0 0 0 3c4.85 0 5.57 3.73 5.64 4.14l4.76 19.7H55a12 12 0 0 0-23.85 0h-1.8a12 12 0 0 0-23.86 0H3.42l4.77-19.7C8.25 6.73 9 3 13.83 3a1.5 1.5 0 0 0 0-3c-6 0-8.24 4.3-8.6 6.65L.05 28a1.42 1.42 0 0 0 1.43 1.82h4a12 12 0 0 0 23.85 0h1.81a12 12 0 0 0 23.86 0h4A1.41 1.41 0 0 0 60.46 28zm-34.14 1.84a9 9 0 0 1-17.93-1.5 9.29 9.29 0 0 1 .13-1.5 9 9 0 0 1 17.8 0 9.29 9.29 0 0 1 .13 1.5 9.2 9.2 0 0 1-.13 1.5zm25.67 0a9 9 0 0 1-17.93-1.5 9.3 9.3 0 0 1 .14-1.5 9 9 0 0 1 17.79 0 9.3 9.3 0 0 1 .14 1.5 9.19 9.19 0 0 1-.13 1.5z"/>
+	</symbol>
+	<symbol viewBox="0 0 146.3 40.37" id="footer-logo-desktop">
+		<title>Логотип pink</title>
+		<path fill="#d22856" d="M98.5 9.87a3.63 3.63 0 0 1-3.63-3.62 3.62 3.62 0 0 1-3.62 3.62 3.63 3.63 0 0 1 3.62 3.63 3.64 3.64 0 0 1 3.63-3.63z"/>
+		<g fill="#d22856">
+			<path d="M43.09 19.31h.73a2.48 2.48 0 0 0-2.13-1.23 2 2 0 0 1-1.89-1.35 12.09 12.09 0 0 0-2.09.82h.19a2 2 0 0 1 2 2 2.83 2.83 0 0 1 0 .29 8.8 8.8 0 0 1 3.19-.53z"/>
+			<path d="M60.46 28L55.29 6.65C54.93 4.3 52.69 0 46.69 0a1.5 1.5 0 0 0 0 3c4.85 0 5.57 3.73 5.64 4.14l4.76 19.7H55a12 12 0 0 0-5.3-8.52 2.5 2.5 0 0 0-1.53 2.3 2.06 2.06 0 0 1 0 .26 9.21 9.21 0 0 1 4 7.47 9.3 9.3 0 0 1-.14 1.5 9 9 0 0 1-17.79 0 9.3 9.3 0 0 1-.14-1.5 9.34 9.34 0 0 1 .95-4 2 2 0 0 1-1.86-2 .71.71 0 0 0-.19-.49 11.84 11.84 0 0 0-1.79 5h-1.86a12 12 0 0 0-23.86 0H3.42L8.19 7.14C8.25 6.73 9 3 13.83 3a1.5 1.5 0 0 0 0-3c-6 0-8.24 4.3-8.6 6.65L.05 28a1.42 1.42 0 0 0 1.43 1.82h4a12.65 12.65 0 0 0 .38 1.83.75.75 0 0 0 .1-.36 2 2 0 0 1 2-2 2.42 2.42 0 0 1 .48.06 8.79 8.79 0 0 1-.07-1 9.29 9.29 0 0 1 .13-1.5 9 9 0 0 1 17.8 0 9.29 9.29 0 0 1 .13 1.5A9 9 0 0 1 12 35.58a2 2 0 0 1-1.3.49.75.75 0 0 0-.74.75 2 2 0 0 1-.18.81 11.91 11.91 0 0 0 7.61 2.74 12 12 0 0 0 11.96-10.52h1.81a12 12 0 0 0 23.86 0h4A1.41 1.41 0 0 0 60.46 28z"/>
+		</g>
+		<path fill="#283645" d="M50.69 16.12a4.49 4.49 0 0 1-4.5-4.49 4.5 4.5 0 0 1-4.5 4.49 4.51 4.51 0 0 1 4.5 4.5 4.5 4.5 0 0 1 4.5-4.5zM37.9 19.63a2.75 2.75 0 0 1-2.75-2.75 2.75 2.75 0 0 1-2.74 2.75 2.74 2.74 0 0 1 2.74 2.74 2.75 2.75 0 0 1 2.75-2.74zM10.73 34.07A2.75 2.75 0 0 1 8 31.32a2.75 2.75 0 0 1-2.74 2.75A2.75 2.75 0 0 1 8 36.82a2.75 2.75 0 0 1 2.73-2.75z"/>
+	</symbol>
+</svg>
+
+
 <header class="page-header">
-	<nav class="main-nav">
-		<a class="main-nav__logo header-logo">
-			<img class="header-logo__img" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип Пинк">
-		</a>
-		<button class="main-nav__toggle" type="button">Открыть меню</button>
-		<div class="main-nav__wrapper">
-			<ul class="main-nav__list nav-list">
-				<li class="nav-list__item">
+	<nav class="main-nav main-nav--closed main-nav--nojs">
+		<div class="container">
+			<div class="main-nav__wrapper">
+				<a class="main-nav__logo header-logo" href="index.html" title="На главную">
+					<picture>
+						<source media="(min-width: 960px)" srcset="img/logotype-white-desktop.svg">
+						<source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
+						<img class="header-logo__img" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип Пинк">
+					</picture>
+				</a>
+				<button class="main-nav__toggle main-nav__toggle--active" type="button">
+					<span>Открыть меню</span>
+				</button>
+			</div>
+			<ul class="main-nav__list">
+				<li class="main-nav__list-item">
 					<a href="index.html">Главная</a>
 				</li>
-				<li class="nav-list__item nav-list__item--active">
+				<li class="main-nav__list-item main-nav__list-item--active">
 					<a>Фотографии</a>
 				</li>
-				<li class="nav-list__item">
+				<li class="main-nav__list-item">
 					<a href="form.html">Конкурс</a>
 				</li>
-				<li class="nav-list__item">
+				<li class="main-nav__list-item">
 					<a href="https://htmlacademy.ru">HTML Academy</a>
 				</li>
 			</ul>
 		</div>
 	</nav>
+	<div class="page-header__wrapper-title">
+		<div class="container">
+			<h1 class="page-header__title page-header__title--photo">Фотографии<br> пользователей</h1>
+		</div>
+	</div>
 </header>
 
 <main class="page-main">
-	<section class="photos">
-		<div class="photos__wrapper-title">
-			<div class="container">
-				<h1 class="photos__title">Фотографии пользователей</h1>
-			</div>
-		</div>
+	<div class="photos">
 		<div class="container">
 			<p class="photos__desc">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 		</div>
 
-		<article class="photos__article article article--panorama">
+		<article class="article article--panorama">
 			<h2 class="visually-hidden">Пост пользователя</h2>
 			<div class="article__photo">
-				<img class="article__img" src="img/panorama-mobile@1x.jpg" alt="" width="320" height="137">
-				<p class="article__photo-panorama">Панорама дня</p>
+				<div class="container">
+					<p class="article__photo-panorama">Панорама дня</p>
+				</div>
+				<picture>
+					<source media="(min-width: 960px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+					<source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+					<img class="article__img" src="img/panorama-desktop@0,5x.jpg" srcset="img/panorama-desktop.jpg 2x" alt="Панорама дня">
+				</picture>
 			</div>
 			<div class="container">
 				<blockquote class="article__desc">
@@ -61,11 +108,15 @@
 			</div>
 		</article>
 
-		<div class="container">
-			<article class="photos__article article">
+		<div class="container photos__container">
+			<article class="article article--all">
 				<h2 class="visually-hidden">Пост пользователя</h2>
 				<div class="article__photo">
-					<img class="article__img" src="img/photo-car-mobile@1x.jpg" alt="" width="280" height="180">
+					<picture>
+						<source media="(min-width: 960px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+						<source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+						<img class="article__img" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="">
+					</picture>
 				</div>
 				<blockquote class="article__desc">
 					<p class="article__name-time">
@@ -77,10 +128,14 @@
 				</blockquote>
 			</article>
 
-			<article class="photos__article article">
+			<article class="article article--all">
 				<h2 class="visually-hidden">Пост пользователя</h2>
 				<div class="article__photo">
-					<img class="article__img" src="img/photo-drumset-mobile@1x.jpg" alt="" width="280" height="180">
+					<picture>
+						<source media="(min-width: 960px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+						<source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+						<img class="article__img" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="">
+					</picture>
 				</div>
 				<blockquote class="article__desc">
 					<p class="article__name-time">
@@ -92,10 +147,14 @@
 				</blockquote>
 			</article>
 
-			<article class="photos__article article">
+			<article class="article  article--all">
 				<h2 class="visually-hidden">Пост пользователя</h2>
 				<div class="article__photo">
-					<img class="article__img" src="img/photo-window-mobile@1x.jpg" alt="" width="280" height="180">
+					<picture>
+						<source media="(min-width: 960px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+						<source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+						<img class="article__img" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="">
+					</picture>
 				</div>
 				<blockquote class="article__desc">
 					<p class="article__name-time">
@@ -107,10 +166,14 @@
 				</blockquote>
 			</article>
 
-			<article class="photos__article article">
+			<article class="article article--all">
 				<h2 class="visually-hidden">Пост пользователя</h2>
 				<div class="article__photo">
-					<img class="article__img" src="img/photo-fair-mobile@1x.jpg" alt="" width="280" height="180">
+					<picture>
+						<source media="(min-width: 960px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+						<source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+						<img class="article__img" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="">
+					</picture>
 				</div>
 				<blockquote class="article__desc">
 					<p class="article__name-time">
@@ -122,10 +185,14 @@
 				</blockquote>
 			</article>
 
-			<article class="photos__article article">
+			<article class="article article--all">
 				<h2 class="visually-hidden">Пост пользователя</h2>
 				<div class="article__photo">
-					<img class="article__img" src="img/photo-pov-mobile@1x.jpg" alt="" width="280" height="180">
+					<picture>
+						<source media="(min-width: 960px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+						<source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+						<img class="article__img" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="">
+					</picture>
 				</div>
 				<blockquote class="article__desc">
 					<p class="article__name-time">
@@ -137,10 +204,14 @@
 				</blockquote>
 			</article>
 
-			<article class="photos__article article">
+			<article class="article article--all">
 				<h2 class="visually-hidden">Пост пользователя</h2>
 				<div class="article__photo">
-					<img class="article__img" src="img/photo-wing-mobile@1x.jpg" alt="" width="280" height="180">
+					<picture>
+						<source media="(min-width: 960px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+						<source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+						<img class="article__img" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="">
+					</picture>
 				</div>
 				<blockquote class="article__desc">
 					<p class="article__name-time">
@@ -152,7 +223,7 @@
 				</blockquote>
 			</article>
 		</div>
-	</section>
+	</div>
 
 	<section class="upload">
 		<h2 class="visually-hidden">Загрузить фото</h2>
@@ -249,8 +320,8 @@
 		<p class="copyright__text">Разработано</p>
 		<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="html academy">
 			<svg fill="#d22856" width="26.94" height="34.09">
-					<use xlink:href="index.html#logo-html-academy"></use>
-				</svg>
+				<use xlink:href="index.html#logo-html-academy"></use>
+			</svg>
 		</a>
 	</div>
 </footer>
