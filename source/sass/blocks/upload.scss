@@ -227,7 +227,6 @@
 		height: 72px;
 		align-items: center;
 		border-bottom: 1px solid rgba(#283645, .1);
-
 	}
 
 	.upload__range-scale {
@@ -266,5 +265,55 @@
 
 	.upload__btn--submit {
 		margin-bottom: 24px;
+	}
+}
+
+@media (min-width: 960px) {
+	.upload__desc {
+		margin: 28px 0 66px;
+	}
+
+	.upload__form .container {
+		padding: 0 0 57px 20px;
+		margin-bottom: 28px;
+	}
+
+	.upload__photo {
+		margin-right: 90px;
+	}
+
+	.upload__filter-wrapper {
+		max-width: 410px;
+	}
+
+	.upload__filter-item--crop svg {
+		width: 44px;
+		height: 44px;
+	}
+
+	.upload__filter-item--fill svg {
+		width: 48px;
+		height: 44px;
+	}
+
+	.upload__filter-item--contrast svg {
+		width: 32px;
+		height: 32px;
+	}
+
+	.upload__range-scale {
+		width: 288px;
+	}
+
+	.upload__filter-wrapper .upload__buttons {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.upload__btn {
+		width: 183px;
+		margin-bottom: 0;
 	}
 }
