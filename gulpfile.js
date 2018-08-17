@@ -6,6 +6,7 @@ var plumber = require('gulp-plumber');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var cssmin = require('gulp-csso');
+var htmlmin = require('gulp-htmlmin');
 var jsmin = require('gulp-uglify');
 var rename = require("gulp-rename");
 var imgmin = require('gulp-tinify');
@@ -57,4 +58,10 @@ gulp.task('minjs', function () {
 	return gulp.src('source/js/**/*.js')
 		.pipe(jsmin())
 		.pipe(gulp.dest('build/js'));
+});
+
+gulp.task('minhtml', function() {
+	return gulp.src('source/*.html')
+		.pipe(htmlmin({collapseWhitespace: true, removeComments: true}))
+		.pipe(gulp.dest('build/'));
 });
