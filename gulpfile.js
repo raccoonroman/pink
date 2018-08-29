@@ -24,7 +24,6 @@ gulp.task('sass', function () {
 		.pipe(gulp.dest('source/css'))
 		.pipe(browserSync.reload({stream: true}))
 		.pipe(cssmin())
-		.pipe(rename('style.min.css'))
 		.pipe(gulp.dest('build/css'))
 });
 
