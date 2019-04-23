@@ -17,22 +17,22 @@
   },
   "homepage": "https://github.com/raccoonroman/pink#readme",
   "devDependencies": {
-    "autoprefixer": "^9.1.0",
-    "browser-sync": "^2.24.6",
-    "gulp": "^3.9.1",
+    "autoprefixer": "^9.5.1",
+    "browser-sync": "^2.26.4",
+    "gulp": "^4.0.1",
     "gulp-csso": "^3.0.1",
-    "gulp-htmlmin": "^4.0.0",
-    "gulp-plumber": "^1.2.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.1",
-    "gulp-svgmin": "^1.2.4",
+    "gulp-sass": "^4.0.2",
+    "gulp-svgmin": "^2.2.0",
     "gulp-tinify": "^1.0.2",
-    "gulp-uglify": "^3.0.1",
-    "gulp-webp": "^3.0.0"
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1"
   },
   "dependencies": {
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.11",
     "minimatch": "^3.0.4"
   }
 }
